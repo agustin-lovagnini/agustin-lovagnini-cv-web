@@ -6,6 +6,12 @@
 
 .header-container {
     background-color: #000;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-direction: row-reverse;
 }
 
 .header-container a {
@@ -15,5 +21,19 @@
 
 .logo {
     font-family: "Anton", sans-serif;
-    color: #fff;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar li {
+    display: inline-block;
+}
+
+.nav-link {
+    font-family: "Abel", sans-serif;
+    border-bottom: 1px solid #fff;
 }
