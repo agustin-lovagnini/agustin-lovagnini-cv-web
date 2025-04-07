@@ -89,11 +89,22 @@ main {
     letter-spacing: 6px;
 }
 
+.content-foto-perfil {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(28, 28, 28, 0.8);
+    border: 5px solid white;
+    border-radius: 15%;
+    margin: 15px;
+}
 
 .img-perfil {
     width: 200px;
     height: auto;
     border-radius: 10%;
+    display: block;
 }
+
+
 
 /*? FOOTER */
