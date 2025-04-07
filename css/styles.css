@@ -53,7 +53,7 @@ header a {
 
 /*? MAIN */
 main {
-    background-color: var(--background-color);
+    background-image: url(../img/img-fondo.jpg);
     height: 100vh;
 }
 
