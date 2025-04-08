@@ -36,6 +36,7 @@ header a {
 
 .logo {
     font-family: var(--estilo-tipografia-anton);
+    font-size: 30px;
 }
 
 .nav-bar ul {
