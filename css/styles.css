@@ -23,23 +23,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     flex-direction: row-reverse;
     border-bottom: 5px solid var(--color-1);
     padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header a {
-    color: var(--color-tipografia);
     text-decoration: none;
 }
 
 .logo {
     font-family: var(--estilo-tipografia-anton);
     font-size: 30px;
+    color: var(--color-tipografia);
 }
 
-.nav-bar ul {
+#nav-bar ul {
     list-style: none;
     display: flex;
     gap: 3rem;
@@ -47,39 +49,50 @@ header a {
 
 .nav-link {
     font-family: var(--estilo-tipografia-abel);
-    border-bottom: 1px solid var(--color-tipografia);
+    color: #c2c5aa;
     font-size: 14px;
     letter-spacing: 2px;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: color 0.4s ease, border-bottom 0.9s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
 }
 
 /*? MAIN */
 main {
     background-image: url(../img/img-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
 .info-personal {
     color: var(--color-tipografia);
-    display: inline-block;
-    margin: 50px;
+    text-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 .nombre-completo {
     line-height: 0.9;
+    margin-bottom: 15px; 
 }
 
+
 .nombre {
-    display: block;
     font-family: var(--estilo-tipografia-abel);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
+    margin-bottom: 5px;
 }
 
 .apellido {
-    display: block;
     font-family: var(--estilo-tipografia-anton);
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 5px;
 }
 
@@ -87,23 +100,24 @@ main {
     font-family: var(--estilo-tipografia-abel);
     margin-top: 5px;
     font-weight: bold;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
+    font-size: 20px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 1);
 }
 
 .content-foto-perfil {
-    display: inline-block;
     padding: 20px;
     background-color: rgba(28, 28, 28, 0.8);
     border: 5px solid white;
     border-radius: 15%;
     margin: 15px;
+    display: inline-block;
 }
 
 .img-perfil {
     width: 200px;
     height: auto;
     border-radius: 10%;
-    display: block;
 }
 
 
