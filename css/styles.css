@@ -68,19 +68,21 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; /**chquear cuando edite*/
 }
 
 .info-personal {
     color: var(--color-tipografia);
     text-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nombre-completo {
     line-height: 0.9;
     margin-bottom: 15px; 
 }
-
 
 .nombre {
     font-family: var(--estilo-tipografia-abel);
