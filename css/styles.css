@@ -126,3 +126,10 @@
 
 /*? FOOTER */
 
+#footer {
+    background-color: var(--background-color);
+    color: var(--color-tipografia);
+    height: 70px;
+    border-top: 5px solid var(--color-1);
+}
+
