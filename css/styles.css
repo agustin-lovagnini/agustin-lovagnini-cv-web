@@ -17,7 +17,7 @@
 
 /*? HEADER */
 
-header {
+#header {
     background-color: var(--background-color);
     height: 50px;
     display: flex;
@@ -31,7 +31,7 @@ header {
     z-index: 1000;
 }
 
-header a {
+#header a {
     text-decoration: none;
 }
 
@@ -49,12 +49,12 @@ header a {
 
 .nav-link {
     font-family: var(--estilo-tipografia-abel);
-    color: #c2c5aa;
+    color: rgb(255, 255, 255, 0.7);
     font-size: 14px;
     letter-spacing: 2px;
     display: inline-block;
     padding-bottom: 2px;
-    transition: color 0.4s ease, border-bottom 0.9s ease;
+    transition: color 0.9s ease-in-out, border-bottom 0.9s ease-in-out;
 }
 
 .nav-link:hover {
@@ -63,7 +63,7 @@ header a {
 }
 
 /*? MAIN */
-main {
+#main {
     background-image: url(../img/img-fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -104,7 +104,7 @@ main {
     font-weight: bold;
     letter-spacing: 8px;
     font-size: 20px;
-    text-shadow: 2px 1px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
 .content-foto-perfil {
@@ -125,3 +125,4 @@ main {
 
 
 /*? FOOTER */
+
