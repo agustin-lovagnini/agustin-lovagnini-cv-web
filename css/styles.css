@@ -10,7 +10,7 @@
     --background-color-img: rgba(28, 28, 28, 0.8);
     --color-tipografia: #fff;
     --color-1: #B08745; /**color de diseño*/
-    --color-2: #e9b766; /**color de nav-link*/
+    --color-2: #e9b766; /**color de header__nav-item*/
     --botones: rgba(255, 255, 255, 0.959);
 
     /**tipografia*/
@@ -38,19 +38,19 @@
     text-decoration: none;
 }
 
-.logo {
+.header__logo {
     font-family: var(--estilo-tipografia-anton);
     font-size: 30px;
     color: var(--color-tipografia);
 }
 
-#nav-bar ul {
+.header__nav ul {
     list-style: none;
     display: flex;
     gap: 3rem;
 }
 
-.nav-link {
+.header__nav-item {
     font-family: var(--estilo-tipografia-abel);
     color: var(--botones);
     font-size: 14px;
@@ -60,7 +60,7 @@
     transition: color 0.3s ease, border-bottom 0.3s ease-in-out;
 }
 
-.nav-link:hover {
+.header__nav-item:hover {
     border-bottom: 1px solid var(--color-2);
     color: var(--color-2);
 }
@@ -76,7 +76,7 @@
     height: 100vh; /**chquear cuando edite*/
 }
 
-.info-personal {
+.perfil {
     color: var(--color-tipografia);
     text-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
     display: flex;
@@ -84,12 +84,12 @@
     align-items: center;
 }
 
-.nombre-completo {
+.perfil__nombre-completo {
     line-height: 0.9;
     margin-bottom: 15px; 
 }
 
-.nombre {
+.perfil__nombre {
     font-family: var(--estilo-tipografia-abel);
     font-weight: bold;
     font-size: 40px;
@@ -97,13 +97,13 @@
     margin-bottom: 5px;
 }
 
-.apellido {
+.perfil__apellido {
     font-family: var(--estilo-tipografia-anton);
     font-size: 70px;
     letter-spacing: 5px;
 }
 
-.rubro {
+.perfil__rubro {
     font-family: var(--estilo-tipografia-abel);
     margin-top: 5px;
     font-weight: bold;
@@ -112,18 +112,18 @@
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
-.icons-lenguajes-container {
+.perfil__lenguajes {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-.icons-lenguajes {
+.perfil__icono-lenguajes {
     width: 50px;
     height: auto;
 }
 
-.content-foto-perfil {
+.perfil__foto {
     padding: 20px;
     background-color: var(--background-color-img);
     border: 5px solid #fff;
@@ -132,13 +132,13 @@
     display: inline-block;
 }
 
-.img-perfil {
+.perfil__img {
     width: 200px;
     height: auto;
     border-radius: 10%;
 }
 
-.icon-tilde {
+.main__icon-check {
     font-size: 140px;
     color: #fff;
     margin-top: 68px;
@@ -162,7 +162,7 @@
     border-top: 5px solid var(--color-1);
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,13 +170,13 @@
     height: 100%;
 }
 
-.footer-left {
+.footer__left {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-info {
+.footer__info {
     color: var(--color-tipografia);
     border-right: 1px solid #fff;
     padding-right: 1rem;
@@ -187,24 +187,24 @@
     flex-direction: column;
 }
 
-.footer-info a {
+.footer__info a {
     text-decoration: none;
     color: inherit;
 }
 
-.footer-nombre {
+.footer__nombre {
     font-family: var(--estilo-tipografia-abel);
     font-size: 15px;
     letter-spacing: 2px;
 }
 
-.footer-rubro {
+.footer__rubro {
     font-family: var(--estilo-tipografia-abel);
     font-size: 12px;
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
-.footer-nav {
+.footer__nav {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -212,7 +212,7 @@
     row-gap: 0.3rem;
 }
 
-.footer-link {
+.footer__nav-link {
     text-decoration: none;
     font-family: var(--estilo-tipografia-abel);
     color: var(--botones);
@@ -221,21 +221,22 @@
     padding: 5px;
 }
 
-.footer-link:hover {
+.footer__nav-link:hover {
     color: #fff;
 }
 
-.footer-icons {
+.footer__social {
     display: flex;
     gap: 1rem;
 }
 
-.icons {
+.footer__icon {
     color: rgb(255, 255, 255, 0.5);;
     font-size: 30px;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease,color 0.3s ease;
 }
 
-.icons:hover {
-    color: #fff
+.footer__icon:hover {
+    color: #fff;
+    transform: scale(1.05);
 }
