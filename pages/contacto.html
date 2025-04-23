@@ -36,7 +36,36 @@
     <!--main-->
 
     <main id="main">
-        
+        <section class="formulario">
+          <div class="formulario__contenedor">
+            <h2 class="formulario__titulo">HABLEMOS</h2>
+            <p class="formulario__subtitulo">Si quieres ponerte en contacto conmigo, puedes hacerlo a través de este formulario o redes sociales.</p>
+            <form action="#" method="POST" class="formulario__form">
+              
+              <label class="formulario__label" for="nombre">Nombre
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre" class="formulario__input">
+              </label>
+              
+              <label class="formulario__label" for="email">Email
+                <input type="email" id="email" name="email" required placeholder="Escribe tu email" class="formulario__input">
+              </label>
+
+              <label class="formulario__label" for="mensaje">¿Comentame en que te puedo ayudar?
+                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje" class="formulario__textarea" maxlength="500"></textarea>
+              </label>
+
+              <button class="formulario__boton-enviar"  type="submit">Enviar</button>
+
+            </form>
+          </div>
+
+          <div class="perfil__foto">
+            <img class="perfil__img" src="../img/foto-perfil.jpg" alt="foto de perfil">
+          </div>
+
+        </section>
+
+
     </main>
 
     <!--footer-->
@@ -61,7 +90,7 @@
         </div>
         <div class="footer__right">
           <div class="footer__social">
-            <a href="#"><i class="footer__icon fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="footer__icon fa-brands fa-instagram"></i></a>
             <a href="#"><i class="footer__icon fa-solid fa-envelope"></i></a>
             <a href="#"><i class="footer__icon fa-brands fa-x-twitter"></i></a>
             <a href="#"><i class="footer__icon fa-brands fa-github"></i></a>
