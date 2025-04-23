@@ -3,29 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV-¿QUIEN SOY?</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    
+    <title>CV-INICIO</title>
+  
     <!-- Tipografia Abton y Abel-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
+
+  <!--header-->
+
     <header id="header">
-      <a href="../index.html" class="logo">VL</a>
-      <nav id="nav-bar">
+      <a href="../index.html" class="header__logo">VL</a>
+      <nav class="header__nav">
         <ul>
-          <li><a href="../index.html" class="nav-link">Inicio</a></li>
-          <li><a href="#" class="nav-link">¿Quien soy?</a></li>
-          <li><a href="./proyectos.html" class="nav-link">Proyectos</a></li>
-          <li><a href="./habilidades.html" class="nav-link">Hablilidades</a></li>
-          <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+          <li><a href="../index.html" class="header__nav-item">Inicio</a></li>
+          <li><a href="#" class="header__nav-item">¿Quien soy?</a></li>
+          <li><a href="./proyectos.html" class="header__nav-item">Proyectos</a></li>
+          <li><a href="./habilidades.html" class="header__nav-item">Hablilidades</a></li>
+          <li><a href="./contacto.html" class="header__nav-item">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main id="main"></main>
-    <footer id="footer"></footer>
+
+    <!--main-->
+
+    <main id="main">
+        
+    </main>
+
+    <!--footer-->
+
+    <footer id="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <div class="footer__info">
+            <a href="../index.html" >
+              <h3 class="footer__nombre">Agustin<br>Lovagnini</h3>
+              <p class="footer__rubro">Desarrollador web</p>
+            </a>
+          </div>
+          <nav>
+            <ul class="footer__nav">
+              <li><a href="#" class="footer__nav-link">¿Quien soy?</a></li>
+              <li><a href="./proyectos.html" class="footer__nav-link">Proyectos</a></li>
+              <li><a href="./habilidades.html" class="footer__nav-link">Habilidades</a></li>
+              <li><a href="./contacto.html" class="footer__nav-link">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social">
+            <a href="#"><i class="footer__icon fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="footer__icon fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="footer__icon fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="footer__icon fa-brands fa-github"></i></a>
+            <a href="#"><i class="footer__icon fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
