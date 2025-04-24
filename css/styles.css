@@ -9,8 +9,10 @@
     --background-color: #000;
     --background-color-img: rgba(28, 28, 28, 0.8);
     --color-tipografia: #fff;
-    --color-1: #B08745; /**color de diseño*/
-    --color-2: #e9b766; /**color de header__nav-item*/
+    --color-1: #B08745;
+    /**color de diseño*/
+    --color-2: #e9b766;
+    /**color de header__nav-item*/
     --botones: rgba(255, 255, 255, 0.959);
 
     /**tipografia*/
@@ -72,59 +74,84 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /**chquear cuando edite*/
+    height: 100vh;
 }
 
 /*! INDEX - MAIN */
 
 .perfil {
-    color: var(--color-tipografia);
-    text-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
-    display: flex;
     justify-content: space-around;
+}
+
+.perfil,
+.perfil-contacto__info-personal {
+    color: var(--color-tipografia);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    display: flex;
     align-items: center;
 }
 
-.perfil__nombre-completo, .perfil-contacto__nombre-completo {
+.perfil__nombre-completo {
     line-height: 0.9;
-    margin-bottom: 15px; 
 }
 
-.perfil__nombre, .perfil-contacto__nombre {
+.perfil__nombre-completo {
+    margin-bottom: 15px;
+}
+
+.perfil__nombre,
+.perfil-contacto__nombre {
     font-family: var(--estilo-tipografia-abel);
     font-weight: bold;
-    font-size: 40px;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
 
-.perfil__apellido, .perfil-contacto__apellido {
-    font-family: var(--estilo-tipografia-anton);
+.perfil__nombre {
+    font-size: 40px;
+}
+
+.perfil__apellido {
     font-size: 70px;
+}
+
+.perfil__apellido,
+.perfil-contacto__apellido {
+    font-family: var(--estilo-tipografia-anton);
     letter-spacing: 5px;
 }
 
-.perfil__rubro, .perfil-contacto__rubro {
-    font-family: var(--estilo-tipografia-abel);
+.perfil__rubro {
     margin-top: 5px;
-    font-weight: bold;
     letter-spacing: 8px;
+}
+
+.perfil__rubro,
+.perfil-contacto__rubro {
+    font-family: var(--estilo-tipografia-abel);
+    font-weight: bold;
     font-size: 20px;
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
 .perfil__lenguajes {
-    display: flex;
-    gap: 15px;
     margin-top: 20px;
 }
 
-.perfil__icono-lenguajes {
+.perfil__lenguajes,
+.perfil-contacto__lenguajes {
+    display: flex;
+    gap: 15px;
+}
+
+.perfil__icono-lenguajes,
+.perfil-contacto__icono-lenguajes {
     width: 50px;
     height: auto;
 }
 
-.perfil__foto, .perfil-contacto__foto {
+.perfil__foto,
+.perfil-contacto__foto {
     padding: 20px;
     background-color: var(--background-color-img);
     border: 5px solid #fff;
@@ -133,7 +160,8 @@
     display: inline-block;
 }
 
-.perfil__img, .perfil-contacto__img {
+.perfil__img,
+.perfil-contacto__img {
     width: 200px;
     height: auto;
     border-radius: 10%;
@@ -155,26 +183,11 @@
     align-items: center;
 }
 
-.perfil-contacto {
-
+.formulario {
+    width: 50%;
 }
-
-.perfil-contacto__info-personal {
-    color: var(--color-tipografia);
-    text-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-}
-
-.perfil-contacto__nombre-completo{
-    text-align: center;
-}
-
-
 
 .formulario__contenedor {
-    width: 65%;
     margin: 15px;
     padding: 25px 20px;
     background-color: var(--background-color-img);
@@ -219,7 +232,8 @@
     font-family: var(--estilo-tipografia-abel);
 }
 
-.formulario__input, .formulario__textarea {
+.formulario__input,
+.formulario__textarea {
     display: block;
     width: 100%;
     margin-top: 5px;
@@ -255,13 +269,43 @@
     font-family: var(--estilo-tipografia-abel);
     font-size: 15px;
     letter-spacing: 1px;
-    transition: border 0.3s ease,scale 0.3s ease;
+    transition: border 0.3s ease, scale 0.3s ease;
 }
 
-.formulario__boton-enviar:hover{
+.formulario__boton-enviar:hover {
     border: 1px solid var(--color-2);
     scale: 1.05;
     cursor: pointer;
+}
+
+.perfil-contacto__info-personal {
+    flex-direction: column;
+}
+
+.perfil-contacto__nombre-completo {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.perfil-contacto__nombre {
+    font-size: 30px;
+}
+
+.perfil-contacto__nombre-completo {
+    line-height: 1.1;
+}
+
+.perfil-contacto__apellido {
+    font-size: 40px;
+}
+
+.perfil-contacto__rubro {
+    letter-spacing: 5px;
+}
+
+.perfil-contacto__lenguajes {
+    margin-top: 10px;
+    justify-content: center;
 }
 
 /*? FOOTER GLOBAL */
@@ -344,7 +388,7 @@
 .footer__icon {
     color: rgb(255, 255, 255, 0.5);
     font-size: 30px;
-    transition: color 0.2s ease,color 0.3s ease;
+    transition: color 0.2s ease, color 0.3s ease;
 }
 
 .footer__icon:hover {
