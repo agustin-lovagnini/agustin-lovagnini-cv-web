@@ -244,6 +244,7 @@
     background-color: transparent;
     border-radius: 4px;
     color: #fff;
+    outline: none;
 }
 
 .formulario__input::placeholder,
