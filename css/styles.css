@@ -8,7 +8,8 @@
     /**colores*/
     --background-color: #000;
     --background-color-img: rgba(28, 28, 28, 0.8);
-    --color-tipografia: #fff;
+    --color-tipografia-white: #fff;
+    --color-tipografia-black: #000;
     --color-1: #B08745;
     /**color de diseño*/
     --color-2: #e9b766;
@@ -43,7 +44,7 @@
 .header__logo {
     font-family: var(--estilo-tipografia-anton);
     font-size: 30px;
-    color: var(--color-tipografia);
+    color: var(--color-tipografia-white);
 }
 
 .header__nav ul {
@@ -86,7 +87,7 @@
 
 .perfil,
 .perfil-contacto__info-personal {
-    color: var(--color-tipografia);
+    color: var(--color-tipografia-white);
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
@@ -94,7 +95,7 @@
 
 .perfil__nombre-completo {
     line-height: 0.9;
-    
+
 }
 
 .perfil__nombre-completo {
@@ -166,7 +167,7 @@
     border: 1px solid #b1b1b1;
     border-radius: 25px;
     background-color: var(--background-color-img);
-    color: #fff;
+    color: var(--color-tipografia-white);
     font-family: var(--estilo-tipografia-abel);
     font-size: 15px;
     letter-spacing: 1px;
@@ -239,7 +240,7 @@
 .formulario__titulo,
 .formulario__subtitulo {
     text-align: center;
-    color: #fff;
+    color: var(--color-tipografia-white);
 }
 
 .formulario__titulo {
@@ -264,7 +265,7 @@
 .formulario__label {
     display: block;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--color-tipografia-white);
     font-family: var(--estilo-tipografia-abel);
 }
 
@@ -278,13 +279,13 @@
     box-shadow: 0px 0px 15px #0003;
     background-color: transparent;
     border-radius: 4px;
-    color: #fff;
+    color: var(--color-tipografia-white);
     outline: none;
 }
 
 .formulario__input::placeholder,
 .formulario__textarea::placeholder {
-    color: #fff;
+    color: var(--color-tipografia-white);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     opacity: 0.7;
@@ -302,7 +303,7 @@
     border: 1px solid #b1b1b1;
     border-radius: 25px;
     background-color: var(--background-color-img);
-    color: #fff;
+    color: var(--color-tipografia-white);
     font-family: var(--estilo-tipografia-abel);
     font-size: 15px;
     letter-spacing: 1px;
@@ -338,7 +339,7 @@
 
 .perfil-contacto__rubro {
     letter-spacing: 5px;
-    
+
 }
 
 .perfil-contacto__lenguajes {
@@ -347,46 +348,128 @@
 }
 
 /*! HABILIDADES */
+
+
+/* LADO IZQUIERDO */
 .habilidades {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
+    justify-content: space-around;
 }
 
-.habilidades__info {
-    background-color: var(--background-color-img);
-    margin: 15px;
+.habilidades__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.habilidades__info-tirulos {
+    margin: 15px 15px 0 15px;
+    padding: 25px 20px;
+    background-color: #181818;
+    border: 5px solid var(--color-2);
+    border-radius: 20px;
+    font-family: var(--estilo-tipografia-abel);
+    color: var(--color-tipografia-white);
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.habilidades__info p {
+    margin: 0 15px 15px 15px;
     padding: 25px 20px;
     background-color: var(--background-color-img);
     border: 5px solid #fff;
     border-radius: 20px;
-}
-
-.habilidades__info h2, .habilidades__info h1 {
     font-family: var(--estilo-tipografia-abel);
-    color: #fff;
-    font-size: 30px;
-    letter-spacing: 3px;
-}
-
-.habilidades__info p {
-    font-family: var(--estilo-tipografia-abel);
-    color: #fff;
+    color: var(--color-tipografia-white);
     font-size: 18px;
     letter-spacing: 1px;
-    margin-top: 10px;
 }
 
-.habilidades-tecnologias__icono{
-    width: 50px;
-    height: auto;
+details{
+    background-color: var(--color-2);
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 15px #000;
 }
+
+summary {
+    list-style: none;
+    font-family: var(--estilo-tipografia-anton);
+    font-size: 20px;
+    color: var(--color-tipografia-white);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.habilidades__lenguajes-lista,
+.habilidades__herramientas-adicionales-lista,
+.habilidades__otros-conocimientos-lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 25px 0;
+}
+
+.habilidades__lenguajes-lista-item,
+.habilidades__herramientas-adicionales-item,
+.habilidades__otros-conocimientos-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.habilidades__icono {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+
+/* LADO DERECHO */
+.proyectos__container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyectos__container-item {
+    background-color: yellowgreen;
+    border: 1px solid #000;
+}
+
+.proyectos__container-item:nth-child(1),
+.proyectos__container-item:nth-child(2),
+.proyectos__container-item:nth-child(4),
+.proyectos__container-item:nth-child(5) {
+    flex-grow: 1;
+    height: 100px;
+}
+
+.proyectos__container-item:nth-child(3),
+.proyectos__container-item:nth-child(6) {
+    width: 100%;
+    height: 120px;
+}
+
 
 /*? FOOTER GLOBAL */
 
 #footer {
     background-color: var(--background-color);
-    color: var(--color-tipografia);
+    color: var(--color-tipografia-white);
     height: 70px;
     border-top: 5px solid var(--color-1);
 }
@@ -406,7 +489,7 @@
 }
 
 .footer__info {
-    color: var(--color-tipografia);
+    color: var(--color-tipografia-white);
     border-right: 1px solid #fff;
     padding-right: 1rem;
     margin-right: 1rem;
@@ -451,7 +534,7 @@
 }
 
 .footer__nav-link:hover {
-    color: #fff;
+    color: var(--color-tipografia-white);
 }
 
 .footer__social {
@@ -466,6 +549,6 @@
 }
 
 .footer__icon:hover {
-    color: #fff;
+    color: var(--color-tipografia-white);
     transform: scale(1.05);
 }
