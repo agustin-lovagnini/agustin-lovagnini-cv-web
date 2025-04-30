@@ -589,7 +589,7 @@
 
 /*! MEDIA QUERY */
 
-@media (max-width: 480px) {
+@media (x-width: 768px) {
     /* HEADER MOBILE*/
 
     #header {
