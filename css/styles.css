@@ -26,9 +26,6 @@
 #header {
     background-color: var(--background-color);
     height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row-reverse;
     border-bottom: 5px solid var(--color-1);
     padding: 0 40px;
@@ -37,14 +34,12 @@
     z-index: 1000;
 }
 
-#header a {
+#header a{
     text-decoration: none;
 }
 
 .header__logo {
-    font-family: var(--estilo-tipografia-anton);
     font-size: 30px;
-    color: var(--color-tipografia-white);
 }
 
 .header__nav ul {
@@ -54,7 +49,6 @@
 }
 
 .header__nav-item {
-    font-family: var(--estilo-tipografia-abel);
     color: var(--botones);
     font-size: 14px;
     letter-spacing: 2px;
@@ -68,12 +62,7 @@
     color: var(--color-2);
 }
 
-.menu-toggle {
-    display: none;
-}
-
 .hamburguesa {
-    display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
@@ -82,6 +71,110 @@
 .header__nav ul {
     display: flex;
     gap: 3rem;
+}
+
+/*? FOOTER GLOBAL */
+
+#footer {
+    background-color: var(--background-color);
+    height: 70px;
+    border-top: 5px solid var(--color-1);
+}
+
+.footer__container {
+    padding: 10px 25px;
+    height: 100%;
+}
+
+.footer__info {
+    border-right: 1px solid #fff;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+}
+
+.footer__nombre {
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.footer__rubro {
+    font-size: 12px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+.footer__nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 1rem;
+    row-gap: 0.3rem;
+}
+
+.footer__info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: var(--botones);
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__icon {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 30px;
+    transition: color 0.2s ease, color 0.3s ease;
+}
+
+.footer__icon:hover {
+    transform: scale(1.05);
+}
+
+/* ESTILOS COMPARTIDOS */
+
+#footer,
+.footer__info,
+.footer__nav-link:hover,
+.header__logo,
+.footer__icon:hover {
+    color: var(--color-tipografia-white);
+}
+
+.menu-toggle,
+.hamburguesa {
+    display: none;
+}
+
+.header__logo {
+    font-family: var(--estilo-tipografia-anton);
+}
+
+.header__nav-item {
+    font-family: var(--estilo-tipografia-abel);
+}
+
+.footer__container,
+.footer__left,
+.footer__info,
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nombre,
+.footer__rubro,
+.footer__nav-link {
+    font-family: var(--estilo-tipografia-abel);
 }
 
 /*? MAIN GLOBAL */
@@ -131,7 +224,6 @@
 
 .perfil__nombre,
 .perfil-contacto__nombre {
-    font-family: var(--estilo-tipografia-abel);
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 5px;
@@ -158,7 +250,6 @@
 
 .perfil__rubro,
 .perfil-contacto__rubro {
-    font-family: var(--estilo-tipografia-abel);
     font-weight: bold;
     font-size: 30px;
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
@@ -193,9 +284,7 @@
     padding: 10px 25px;
     border: 1px solid #b1b1b1;
     border-radius: 25px;
-    background-color: var(--background-color-black-opacity);
     color: var(--color-tipografia-white);
-    font-family: var(--estilo-tipografia-abel);
     font-size: 15px;
     letter-spacing: 1px;
     transition: border 0.3s ease, scale 0.3s ease;
@@ -215,27 +304,36 @@
 .perfil__foto,
 .perfil-contacto__foto {
     padding: 20px;
-    background-color: var(--background-color-black-opacity);
     border: 5px solid #fff;
     border-radius: 15%;
     margin: 15px;
     display: inline-block;
 }
 
-.perfil__img,
-.perfil-contacto__img {
+.perfil__img{
     width: 200px;
     height: auto;
     border-radius: 10%;
 }
 
-.main__icon-check {
-    font-size: 140px;
-    color: #fff;
-    margin-top: 68px;
-    margin-left: 30px;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+
+/* PAGINA INDEX - ELEMENTOS CONVINADOS */
+
+.perfil__nombre,
+.perfil-contacto__nombre,
+.perfil__rubro,
+.perfil-contacto__rubro,
+.perfil__boton-llamadores {
+    font-family: var(--estilo-tipografia-abel);
 }
+
+.perfil__foto,
+.perfil-contacto__foto,
+.perfil__boton-llamadores {
+    background-color: var(--background-color-black-opacity);
+}
+
+
 
 /*! CONTACTO */
 
@@ -489,98 +587,9 @@
     height: 120px;
 }
 
-/*? FOOTER GLOBAL */
-
-#footer {
-    background-color: var(--background-color);
-    color: var(--color-tipografia-white);
-    height: 70px;
-    border-top: 5px solid var(--color-1);
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
-    height: 100%;
-}
-
-.footer__left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__info {
-    color: var(--color-tipografia-white);
-    border-right: 1px solid #fff;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer__info a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer__nombre {
-    font-family: var(--estilo-tipografia-abel);
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-.footer__rubro {
-    font-family: var(--estilo-tipografia-abel);
-    font-size: 12px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 1);
-}
-
-.footer__nav {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 1rem;
-    row-gap: 0.3rem;
-}
-
-.footer__nav-link {
-    text-decoration: none;
-    font-family: var(--estilo-tipografia-abel);
-    color: var(--botones);
-    font-size: 14px;
-    letter-spacing: 2px;
-    padding: 5px;
-}
-
-.footer__nav-link:hover {
-    color: var(--color-tipografia-white);
-}
-
-.footer__social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer__icon {
-    color: rgb(255, 255, 255, 0.5);
-    font-size: 30px;
-    transition: color 0.2s ease, color 0.3s ease;
-}
-
-.footer__icon:hover {
-    color: var(--color-tipografia-white);
-    transform: scale(1.05);
-}
-
 /*! MEDIA QUERY */
 
 @media (max-width: 480px) {
-
     /* HEADER MOBILE*/
 
     #header {
@@ -594,6 +603,11 @@
         margin-left: auto;
     }
 
+    .header__nav-item:hover {
+        border-bottom: none;
+        color: var(--botones);
+    }
+
     .header__nav ul {
         flex-direction: column;
         background-color: #000;
@@ -603,6 +617,7 @@
         width: 100%;
         padding: 1rem;
         gap: 15px;
+        align-items: center;
         display: none;
     }
 
@@ -610,6 +625,9 @@
         display: flex;
     }
 
+    .header__nav-item {
+        font-size: 17px;
+    }
 
     /*FOOTER MOBILE*/
 
@@ -663,6 +681,56 @@
         justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
+    }
+
+    .footer__icon:hover {
+        color: rgb(255, 255, 255, 0.5);
+        transform: none;
+    }
+
+
+    /*MAIN MOBILE*/
+    /*! PAGINA INDEX*/
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .perfil__nombre{
+        font-size: 40px;
+    }
+
+    .perfil__apellido{
+        font-size: 60px;
+    }
+
+    .perfil__rubro {
+        font-size: 20px;
+    }
+
+    .perfil__lenguajes {
+        justify-content: center;
+    }
+
+    .perfil__icono-lenguajes{
+        width: 40px;
+    }
+
+    .perfil__boton-contenedor {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .perfil__foto {
+        padding: 15px;
+        border-width: 3px;
+        margin: 30px auto;
+    }
+
+    .perfil__img{
+        width: 170px;
     }
 
 }
