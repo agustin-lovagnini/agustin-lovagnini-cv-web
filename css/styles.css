@@ -66,6 +66,9 @@
     font-size: 30px;
     color: white;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
 }
 
 .header__nav ul {
