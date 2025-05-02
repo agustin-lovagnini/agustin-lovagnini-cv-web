@@ -204,29 +204,23 @@
 /*! INDEX - MAIN */
 
 .perfil {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
     min-height: calc(100vh - 50px);
 }
 
-.perfil,
-.perfil-contacto__info-personal {
-    color: var(--color-tipografia-white);
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    display: flex;
-    align-items: center;
-}
-
-.perfil__nombre-completo {
+.perfil__nombre-completo, .quien-soy__nombre-completo {
     line-height: 0.9;
 }
 
-.perfil__nombre-completo {
+.perfil__nombre-completo, .quien-soy__nombre-completo {
     margin-bottom: 15px;
 }
 
 .perfil__nombre,
-.perfil-contacto__nombre {
+.perfil-contacto__nombre,.quien-soy__nombre {
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 5px;
@@ -240,8 +234,16 @@
     font-size: 80px;
 }
 
+
+.perfil__nombre, .perfil__apellido, .perfil__rubro,
+.perfil-contacto__info-personal, .quien-soy__apellido, .quien-soy__nombre {
+    color: var(--color-tipografia-white);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
 .perfil__apellido,
-.perfil-contacto__apellido {
+.perfil-contacto__apellido,
+.quien-soy__apellido {
     font-family: var(--estilo-tipografia-anton);
     letter-spacing: 5px;
 }
@@ -313,7 +315,8 @@
     display: inline-block;
 }
 
-.perfil__img{
+.perfil__img,
+.perfil-contacto__img{
     width: 200px;
     height: auto;
     border-radius: 10%;
@@ -326,7 +329,8 @@
 .perfil-contacto__nombre,
 .perfil__rubro,
 .perfil-contacto__rubro,
-.perfil__boton-llamadores {
+.perfil__boton-llamadores,
+.quien-soy__nombre {
     font-family: var(--estilo-tipografia-abel);
 }
 
@@ -335,8 +339,6 @@
 .perfil__boton-llamadores {
     background-color: var(--background-color-black-opacity);
 }
-
-
 
 /*! CONTACTO */
 
@@ -589,6 +591,69 @@
     width: 100%;
     height: 120px;
 }
+
+/*! QUIEN SOY */
+
+.quien-soy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.quien-soy__nombre, .quien-soy__apellido {
+    font-size: 50px;
+}
+
+.quien-soy__rubro {
+    font-size: 30px;
+    color: var(--color-tipografia-white);
+    font-family: var(--estilo-tipografia-abel);
+    font-weight: bold;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.quien-soy__container-llamadores {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto 0 auto;
+}
+
+.quien-soy__boton-llamadores {
+    text-align: center;
+    padding: 10px 25px;
+    border: 1px solid #b1b1b1;
+    border-radius: 25px;
+    color: var(--color-tipografia-white);
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: border 0.3s ease, scale 0.3s ease;
+    text-decoration: none;
+    background-color: var(--background-color-black-opacity);
+    font-family: var(--estilo-tipografia-abel);
+}
+
+.quien-soy__boton-contenedor {
+    display: flex;
+    justify-self: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quien-soy__boton-llamadores:hover {
+    border: 1px solid var(--color-2);
+    scale: 1.05;
+    cursor: pointer;
+}
+
+/* ul ul {
+    list-style-type: circle;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+  } */
 
 /*! MEDIA QUERY */
 
