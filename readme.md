@@ -1,18 +1,27 @@
-# 📌 PreEntrega1 - Agustin Alberto Varela Lovagnini
+# 📌 Entrega 2 - Agustín Alberto Varela Lovagnini
 
 ## 📖 Descripción  
-Este proyecto es la primera entrega de la materia [Nombre de la Materia].  
-Incluye:  
-- Prototipo de la web en PDF/imagen.  
-- Maquetado HTML con etiquetas semánticas.  
-- Estilos iniciales en CSS (sin Box Model ni Flexbox). 
+- Estructura avanzada y semántica del HTML.
+- Estilos visuales avanzados en CSS.
+- Uso de clases utilitarias de framework.
+- Integración de librerías externas.
+- Control de versiones con Git y GitHub.
+- Publicación del proyecto en GitHub Pages.
 
-## 🎨 Wireframe  
-Adjuntar aquí una imagen del wireframe o el link al archivo PDF.
+## 🎯 Objetivos
 
-## 🛠️ Tecnologías utilizadas  
-- HTML5  
-- CSS3  
+- Construir una estructura avanzada para la web.
+- Aplicar un diseño visual complejo con CSS.
+- Versionar el proyecto en GitHub con buenas prácticas.
+- Incorporar librerías CSS y JS necesarias.
+- Publicar el proyecto online a través de GitHub Pages.
+
+## 🧱 Tecnologías utilizadas
+
+- HTML5 
+- CSS3 
+- Git + GitHub 
+- GitHub Pages 
 
 
 
