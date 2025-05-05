@@ -71,11 +71,6 @@
     user-select: none;
 }
 
-.header__nav ul {
-    display: flex;
-    gap: 3rem;
-}
-
 /*? FOOTER GLOBAL */
 
 #footer {
@@ -694,7 +689,8 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .proyectos__item-titulo {
