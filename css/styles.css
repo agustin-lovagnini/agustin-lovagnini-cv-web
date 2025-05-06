@@ -84,6 +84,12 @@
     height: 100%;
 }
 
+.footer__logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer__info {
     border-right: 1px solid #fff;
     padding-right: 1rem;
@@ -162,7 +168,6 @@
 
 .footer__container,
 .footer__left,
-.footer__info,
 #header {
     display: flex;
     justify-content: space-between;
@@ -174,6 +179,8 @@
 .footer__nav-link {
     font-family: var(--estilo-tipografia-abel);
 }
+
+
 
 /*? MAIN GLOBAL */
 .fondo-fixed {
@@ -491,7 +498,7 @@
 
 .habilidades__info-titulos {
     position: relative;
-    top: 30px;
+    top: 35px;
     left: 0;
     width: 100%;
     padding: 25px 20px;
@@ -602,6 +609,11 @@
 }
 
 .quien-soy__rubro {
+    display: inline-block ;
+    background-color: var(--background-color);
+    border: 5px solid var(--color-2);
+    border-radius: 20px;
+    padding: 20px;
     font-size: 30px;
     color: var(--color-tipografia-white);
     font-family: var(--estilo-tipografia-abel);
@@ -609,11 +621,42 @@
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
+.quien-soy__texto-container {
+    background-color: var(--background-color-black-opacity);
+    border: 5px solid #fff;
+    border-radius: 20px;
+    padding:  90px 20px 20px 20px;
+    font-family: var(--estilo-tipografia-abel);
+    color: var(--color-tipografia-white);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: start;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+}
+
+.quien-soy__container-habilidades {
+    margin-top: 20;
+}
+
+.quien-soy__llamador-texto {
+    font-family: var(--estilo-tipografia-abel);
+    color: var(--color-tipografia-white);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: start;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+}
+
+.span-llamador {
+    font-weight: bold;
+    color: var(--color-2);
+}
+
 .quien-soy__container-llamadores {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 20px auto 0 auto;
+    margin: 3rem auto 0 auto;
 }
 
 .quien-soy__boton-llamadores {
@@ -691,6 +734,10 @@
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    mask-image: linear-gradient(
+        #000 80%,
+        transparent
+    );
 }
 
 .proyectos__item-titulo {
