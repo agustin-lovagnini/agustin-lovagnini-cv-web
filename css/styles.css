@@ -610,6 +610,7 @@
 
 .quien-soy__rubro {
     display: inline-block ;
+    position: absolute;
     background-color: var(--background-color);
     border: 5px solid var(--color-2);
     border-radius: 20px;
@@ -635,7 +636,13 @@
 }
 
 .quien-soy__container-habilidades {
-    margin-top: 20;
+    margin-top: 20px;
+    margin-left: 1rem;
+    
+}
+
+.sass-item {
+    margin-left: 1rem;
 }
 
 .quien-soy__llamador-texto {
