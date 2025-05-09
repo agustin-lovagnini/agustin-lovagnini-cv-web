@@ -309,7 +309,7 @@
 }
 
 .perfil__foto,
-.perfil-contacto__foto {
+.perfil-contacto__foto, .quien-soy__foto {
     padding: 20px;
     border: 5px solid #fff;
     border-radius: 15%;
@@ -318,7 +318,7 @@
 }
 
 .perfil__img,
-.perfil-contacto__img{
+.perfil-contacto__img, .quien-soy__img{
     width: 200px;
     height: auto;
     border-radius: 10%;
@@ -338,7 +338,7 @@
 
 .perfil__foto,
 .perfil-contacto__foto,
-.perfil__boton-llamadores {
+.perfil__boton-llamadores, .quien-soy__foto {
     background-color: var(--background-color-black-opacity);
 }
 
@@ -604,13 +604,19 @@
     padding: 50px;
 }
 
-.quien-soy__nombre, .quien-soy__apellido {
-    font-size: 50px;
+.quien-soy__nombre-completo{
+    text-align: center;
 }
 
+.quien-soy__nombre, .quien-soy__apellido {
+    font-size: 50px;
+    display: block;
+}
+
+
 .quien-soy__rubro {
-    display: inline-block ;
-    position: absolute;
+    display: block;
+    text-align: center;
     background-color: var(--background-color);
     border: 5px solid var(--color-2);
     border-radius: 20px;
@@ -626,18 +632,21 @@
     background-color: var(--background-color-black-opacity);
     border: 5px solid #fff;
     border-radius: 20px;
-    padding:  90px 20px 20px 20px;
+    padding: 20px;
     font-family: var(--estilo-tipografia-abel);
     color: var(--color-tipografia-white);
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     text-align: start;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 }
 
+.quien-soy__texto {
+    margin-top: 1rem;
+}
+
 .quien-soy__container-habilidades {
-    margin-top: 20px;
-    margin-left: 1rem;
+    margin: 20px 0 30px 16px;
     
 }
 
@@ -648,9 +657,9 @@
 .quien-soy__llamador-texto {
     font-family: var(--estilo-tipografia-abel);
     color: var(--color-tipografia-white);
-    font-size: 15px;
+    font-size: 27px;
     letter-spacing: 1px;
-    text-align: start;
+    text-align: center;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 }
 
@@ -662,7 +671,8 @@
 .quien-soy__container-llamadores {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: anchor-center;
+    gap: 3rem;
     margin: 3rem auto 0 auto;
 }
 
@@ -692,6 +702,11 @@
     scale: 1.05;
     cursor: pointer;
 }
+
+.quien-soy__img-container {
+
+}
+
 
 /*! QUIEN SOY */
 
