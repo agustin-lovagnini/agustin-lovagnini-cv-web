@@ -12,7 +12,7 @@
     --color-tipografia-black: #000;
     --color-1: #b08745;
     /**color de diseño*/
-    --color-2: #e9b766;
+    --color-2: rgb(233, 183, 103);
     /**color de header__nav-item*/
     --botones: rgba(255, 255, 255, 0.959);
 
@@ -34,7 +34,7 @@
     z-index: 1000;
 }
 
-#header a{
+#header a {
     text-decoration: none;
 }
 
@@ -213,16 +213,19 @@
     min-height: calc(100vh - 50px);
 }
 
-.perfil__nombre-completo, .quien-soy__nombre-completo {
+.perfil__nombre-completo,
+.quien-soy__nombre-completo {
     line-height: 0.9;
 }
 
-.perfil__nombre-completo, .quien-soy__nombre-completo {
+.perfil__nombre-completo,
+.quien-soy__nombre-completo {
     margin-bottom: 15px;
 }
 
 .perfil__nombre,
-.perfil-contacto__nombre,.quien-soy__nombre {
+.perfil-contacto__nombre,
+.quien-soy__nombre {
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 5px;
@@ -237,8 +240,12 @@
 }
 
 
-.perfil__nombre, .perfil__apellido, .perfil__rubro,
-.perfil-contacto__info-personal, .quien-soy__apellido, .quien-soy__nombre {
+.perfil__nombre,
+.perfil__apellido,
+.perfil__rubro,
+.perfil-contacto__info-personal,
+.quien-soy__apellido,
+.quien-soy__nombre {
     color: var(--color-tipografia-white);
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
@@ -309,7 +316,8 @@
 }
 
 .perfil__foto,
-.perfil-contacto__foto, .quien-soy__foto {
+.perfil-contacto__foto,
+.quien-soy__foto {
     padding: 20px;
     border: 5px solid #fff;
     border-radius: 15%;
@@ -318,7 +326,8 @@
 }
 
 .perfil__img,
-.perfil-contacto__img, .quien-soy__img{
+.perfil-contacto__img,
+.quien-soy__img {
     width: 200px;
     height: auto;
     border-radius: 10%;
@@ -338,7 +347,8 @@
 
 .perfil__foto,
 .perfil-contacto__foto,
-.perfil__boton-llamadores, .quien-soy__foto {
+.perfil__boton-llamadores,
+.quien-soy__foto {
     background-color: var(--background-color-black-opacity);
 }
 
@@ -570,29 +580,53 @@
 }
 
 .proyectos__container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 20px;
 }
 
-.proyectos__container-item {
-    background-color: yellowgreen;
-    border: 1px solid #000;
+.proyectos__container-item  {
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    transition: transform 0.5s ease, border-color 0.5s ease;
+    overflow: hidden; 
 }
 
-.proyectos__container-item:nth-child(1),
-.proyectos__container-item:nth-child(2),
-.proyectos__container-item:nth-child(4),
-.proyectos__container-item:nth-child(5) {
-    flex-grow: 1;
-    height: 100px;
+.proyectos__container-item:hover {
+    transform: scale(1.05);
+    border-color: var(--color-2);
 }
 
-.proyectos__container-item:nth-child(3),
-.proyectos__container-item:nth-child(6) {
+.proyectos__estilo-hover img {
     width: 100%;
-    height: 120px;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.proyecto__estilo-hover-texto {
+    position: absolute;
+    top: 50%;               
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-tipografia-white);
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+    background-color: rgb(233, 183, 103, 0.8);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.proyectos__estilo-hover:hover .proyecto__estilo-hover-texto {
+    opacity: 1;
+} 
 
 /*! QUIEN SOY */
 
@@ -604,11 +638,12 @@
     padding: 50px;
 }
 
-.quien-soy__nombre-completo{
+.quien-soy__nombre-completo {
     text-align: center;
 }
 
-.quien-soy__nombre, .quien-soy__apellido {
+.quien-soy__nombre,
+.quien-soy__apellido {
     font-size: 50px;
     display: block;
 }
@@ -643,15 +678,6 @@
 
 .quien-soy__texto {
     margin-top: 1rem;
-}
-
-.quien-soy__container-habilidades {
-    margin: 20px 0 30px 16px;
-    
-}
-
-.sass-item {
-    margin-left: 1rem;
 }
 
 .quien-soy__llamador-texto {
@@ -703,10 +729,6 @@
     cursor: pointer;
 }
 
-.quien-soy__img-container {
-
-}
-
 
 /*! QUIEN SOY */
 
@@ -745,7 +767,7 @@
     color: inherit;
 }
 
-.proyectos__media{
+.proyectos__media {
     position: relative;
     overflow: hidden;
 }
@@ -756,10 +778,7 @@
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    mask-image: linear-gradient(
-        #000 80%,
-        transparent
-    );
+    mask-image: linear-gradient(#000 80%, transparent);
 }
 
 .proyectos__item-titulo {
@@ -889,11 +908,11 @@
         padding: 20px;
     }
 
-    .perfil__nombre{
+    .perfil__nombre {
         font-size: 40px;
     }
 
-    .perfil__apellido{
+    .perfil__apellido {
         font-size: 60px;
     }
 
@@ -905,7 +924,7 @@
         justify-content: center;
     }
 
-    .perfil__icono-lenguajes{
+    .perfil__icono-lenguajes {
         width: 40px;
     }
 
@@ -920,7 +939,7 @@
         margin: 30px auto;
     }
 
-    .perfil__img{
+    .perfil__img {
         width: 170px;
     }
 
