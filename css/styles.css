@@ -57,11 +57,6 @@
     transition: color 0.3s ease, border-bottom 0.3s ease-in-out;
 }
 
-.header__nav-item:hover {
-    border-bottom: 1px solid var(--color-2);
-    color: var(--color-2);
-}
-
 .hamburguesa {
     font-size: 30px;
     color: white;
@@ -139,17 +134,13 @@
     transition: color 0.2s ease, color 0.3s ease;
 }
 
-.footer__icon:hover {
-    transform: scale(1.05);
-}
+
 
 /* ESTILOS COMPARTIDOS */
 
 #footer,
 .footer__info,
-.footer__nav-link:hover,
-.header__logo,
-.footer__icon:hover {
+.header__logo {
     color: var(--color-tipografia-white);
 }
 
@@ -309,12 +300,6 @@
     grid-column: 1 / -1;
 }
 
-.perfil__boton-llamadores:hover {
-    border: 1px solid var(--color-2);
-    scale: 1.05;
-    cursor: pointer;
-}
-
 .perfil__foto,
 .perfil-contacto__foto,
 .quien-soy__foto {
@@ -373,10 +358,6 @@
     transition: border 0.3s ease;
 }
 
-.formulario__contenedor:hover {
-    border: 5px solid var(--color-2);
-}
-
 .formulario__titulo,
 .formulario__subtitulo {
     text-align: center;
@@ -389,10 +370,6 @@
     font-size: 40px;
     letter-spacing: 3px;
     transition: color 0.3s ease;
-}
-
-.formulario__contenedor:hover .formulario__titulo {
-    color: var(--color-2);
 }
 
 .formulario__subtitulo {
@@ -448,12 +425,6 @@
     font-size: 15px;
     letter-spacing: 1px;
     transition: border 0.3s ease, scale 0.3s ease;
-}
-
-.formulario__boton-enviar:hover {
-    border: 1px solid var(--color-2);
-    scale: 1.05;
-    cursor: pointer;
 }
 
 .perfil-contacto__info-personal {
@@ -517,7 +488,7 @@
     border-radius: 20px;
     font-family: var(--estilo-tipografia-abel);
     color: var(--color-tipografia-white);
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 3px;
     text-align: center;
     z-index: 2;
@@ -530,7 +501,7 @@
     border-radius: 20px;
     font-family: var(--estilo-tipografia-abel);
     color: var(--color-tipografia-white);
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
@@ -555,6 +526,10 @@
     text-align: center;
     border-radius: 10px;
     padding: 10px;
+}
+
+.habilidades__texto {
+    font-size: 16px;
 }
 
 .habilidades__lenguajes-lista-item,
@@ -586,23 +561,18 @@
     padding: 20px;
 }
 
-.proyectos__container-item  {
+.proyectos__container-item {
     position: relative;
     cursor: pointer;
     border-radius: 20px;
     border: 3px solid #fff;
     transition: transform 0.5s ease, border-color 0.5s ease;
-    overflow: hidden; 
-}
-
-.proyectos__container-item:hover {
-    transform: scale(1.05);
-    border-color: var(--color-2);
+    overflow: hidden;
 }
 
 .proyectos__estilo-hover img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,10 +580,11 @@
 
 .proyecto__estilo-hover-texto {
     position: absolute;
-    top: 50%;               
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--color-tipografia-white);
+    font-family: var(--estilo-tipografia-abel);
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
     background-color: rgb(233, 183, 103, 0.8);
     padding: 1rem 1.5rem;
@@ -623,10 +594,6 @@
     text-align: center;
     font-size: 1.2rem;
 }
-
-.proyectos__estilo-hover:hover .proyecto__estilo-hover-texto {
-    opacity: 1;
-} 
 
 /*! QUIEN SOY */
 
@@ -647,7 +614,6 @@
     font-size: 50px;
     display: block;
 }
-
 
 .quien-soy__rubro {
     display: block;
@@ -723,14 +689,15 @@
     flex-wrap: wrap;
 }
 
-.quien-soy__boton-llamadores:hover {
-    border: 1px solid var(--color-2);
-    scale: 1.05;
-    cursor: pointer;
+/*! PROYECTOS */
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
 }
-
-
-/*! QUIEN SOY */
 
 .proyectos__titulo {
     text-align: center;
@@ -738,7 +705,6 @@
     font-size: 40px;
     letter-spacing: 3px;
     color: var(--color-tipografia-white);
-    margin-bottom: 20px;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
@@ -753,12 +719,8 @@
     background-color: var(--background-color-black-opacity);
     border: 5px solid #fff;
     border-radius: 20px;
-    transition: transform 0.3s ease;
-}
-
-.proyectos__item:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
 }
 
 .proyectos__item a {
@@ -784,7 +746,7 @@
 .proyectos__item-titulo {
     font-family: var(--estilo-tipografia-abel);
     color: var(--color-tipografia-white);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     padding: 10px 5px;
@@ -792,10 +754,12 @@
 
 .proyectos__item-descripcion {
     font-family: var(--estilo-tipografia-abel);
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px 5px;
     color: var(--color-tipografia-white);
 }
+
+
 
 /*! MEDIA QUERY */
 
@@ -811,11 +775,6 @@
     .hamburguesa {
         display: block;
         margin-left: auto;
-    }
-
-    .header__nav-item:hover {
-        border-bottom: none;
-        color: var(--botones);
     }
 
     .header__nav ul {
@@ -893,12 +852,6 @@
         flex-wrap: wrap;
     }
 
-    .footer__icon:hover {
-        color: rgb(255, 255, 255, 0.5);
-        transform: none;
-    }
-
-
     /*MAIN MOBILE*/
     /*! PAGINA INDEX*/
 
@@ -943,6 +896,284 @@
         width: 170px;
     }
 
+    /*! CONTACTO */
+
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .formulario,
+    .perfil-contacto {
+        width: 100%;
+    }
+
+    .formulario__contenedor {
+        margin: 5px;
+        padding: 20px;
+    }
+
+    .formulario__titulo {
+        font-size: 30px;
+    }
+
+    .formulario__subtitulo {
+        font-size: 15px;
+    }
+
+    .perfil-contacto {
+        margin-bottom: 30px;
+    }
+
+    .perfil-contacto__foto {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .perfil-contacto__img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 0px 30px #000;
+    }
+
+    .perfil-contacto__nombre {
+        font-size: 20px;
+    }
+
+    .perfil-contacto__apellido {
+        font-size: 30px;
+    }
+
+    .perfil-contacto__rubro {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .perfil-contacto__lenguajes {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .perfil-contacto__icono-lenguajes {
+        width: 50px;
+    }
+
+    /*! HABILIDADES */
+
+    .habilidades {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .habilidades__left,
+    .habilidades__right {
+        width: 100%;
+    }
+
+    .habilidades__lenguajes-lista,
+    .habilidades__herramientas-adicionales-lista {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .habilidades__lenguajes-lista-item,
+    .habilidades__herramientas-adicionales-item,
+    .habilidades__otros-conocimientos-item {
+        flex-direction: row;
+        text-align: start;
+        gap: 10px;
+    }
+
+    .habilidades__icono {
+        width: 60px;
+    }
+
+    .habilidades__texto {
+        font-size: 14px;
+    }
+
+    .habilidades__info-titulos {
+        font-size: 25px;
+    }
+
+    .habilidades__info-descripcion {
+        font-size: 16px;
+    }
+
+    .habilidades__lenguajes-lista-item,
+    .habilidades__herramientas-adicionales-item {
+        width: 90%;
+    }
+
+    .habilidades__otros-conocimientos-lista {
+        gap: 5px;
+    }
+
+    .proyectos__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    /*! PROYECTOS */
+
+    .proyectos {
+        padding: 20px;
+    }
+
+    .proyectos__titulo {
+        font-size: 35px;
+    }
+
+    .proyectos__contenedor {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .proyectos__item-titulo {
+        font-size: 18px;
+    }
+
+    .proyectos__item-descripcion {
+        font-size: 15px;
+    }
+
+    /*! QUIEN SOY */
+
+    .quien-soy {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .quien-soy__foto {
+        background-color: transparent;
+        border: none;
+    }
+
+    .quien-soy__img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0px 0px 30px #000;
+    }
+
+    .quien-soy__nombre,
+    .quien-soy__apellido {
+        font-size: 30px;
+    }
+
+    .quien-soy__texto-container {
+        font-size: 16px;
+    }
+
+    .quien-soy__boton-contenedor {
+        flex-direction: column;
+        align-items: center;
+        order: 3;
+    }
+
+    .quien-soy__boton-llamadores {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .quien-soy__img-container {
+        order: 1;
+    }
+
+    .quien-soy__info {
+        order: 2;
+    }
+
 }
 
+
+
+
+
 @media (min-width: 600px) and (max-width: 768px) {}
+
+
+
+
+
+
+@media (hover: hover) and (pointer: fine) {
+    /* HEADER */
+
+    .header__nav-item:hover {
+        border-bottom: 1px solid var(--color-2);
+        color: var(--color-2);
+    }
+
+    /* FOOTER */
+    .footer__icon:hover {
+        transform: scale(1.05);
+    }
+
+    .footer__nav-link:hover,
+    .footer__icon:hover {
+        color: var(--color-tipografia-white);
+    }
+
+    /*! PAGINA INDEX*/
+    .perfil__boton-llamadores:hover {
+        border: 1px solid var(--color-2);
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+    /*! CONTACTO */
+    .formulario__contenedor:hover {
+        border: 5px solid var(--color-2);
+    }
+
+    .formulario__contenedor:hover .formulario__titulo {
+        color: var(--color-2);
+    }
+
+    .formulario__boton-enviar:hover {
+        border: 1px solid var(--color-2);
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+    /*! HABILIDADES */
+
+    .proyectos__container-item:hover {
+        transform: scale(1.05);
+        border-color: var(--color-2);
+    }
+
+    .proyectos__estilo-hover:hover .proyecto__estilo-hover-texto {
+        opacity: 1;
+    }
+
+    /*! HABILIDADES */
+
+    .proyectos__item:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        border-color: var(--color-2);
+    }
+
+    /*! QUIEN SOY*/
+
+    .quien-soy__boton-llamadores:hover {
+    border: 1px solid var(--color-2);
+    scale: 1.05;
+    cursor: pointer;
+}
+
+}
