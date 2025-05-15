@@ -1,0 +1,63 @@
+@use "../base/variables" as *;
+@use "../base/extend" as *;
+
+#header {
+    @extend %flex-center-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    padding: 0 40px;
+    flex-direction: row-reverse;
+    background-color: $background-color;
+    border-bottom: 5px solid $color-1;
+
+    a {
+        text-decoration: none;
+    }
+
+    .header__logo {
+        font-size: 30px;
+        color: $color-tipografia-white;
+        font-family: $estilo-tipografia-anton;
+    }
+}
+
+.header__nav {
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+.header__nav-item {
+    font-family: $estilo-tipografia-abel;
+    font-size: 14px;
+    color: $botones-header-item;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-bottom 0.3s ease-in-out;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            border-bottom: 1px solid $color-2;
+            color: $color-2;
+        }
+    }
+}
+
+.hamburguesa {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+}
+
+.menu-toggle,
+.hamburguesa {
+    display: none;
+}
