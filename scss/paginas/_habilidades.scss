@@ -1,0 +1,155 @@
+@use "../base/variables" as *;
+
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+
+    /* LADO IZQUIERDO */
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+
+        .habilidades__info-titulos {
+            position: relative;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            padding: 25px 20px;
+            background-color: $background-color;
+            border: 5px solid $color-2;
+            border-radius: 20px;
+            font-family: $estilo-tipografia-abel;
+            color: $color-tipografia-white;
+            font-size: 30px;
+            letter-spacing: 3px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .habilidades__info-descripcion {
+            padding: 40px 20px 25px 20px;
+            background-color: $background-color-black-opacity;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            font-family: $estilo-tipografia-abel;
+            color: $color-tipografia-white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        ul {
+
+            &.habilidades__lenguajes-lista,
+            &.habilidades__herramientas-adicionales-lista,
+            &.habilidades__otros-conocimientos-lista {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                margin: 25px 0;
+
+                li {
+
+                    &.habilidades__lenguajes-lista-item,
+                    &.habilidades__herramientas-adicionales-item,
+                    &.habilidades__otros-conocimientos-item {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        border-radius: 10px;
+                        padding: 10px;
+
+                        &.habilidades__lenguajes-lista-item,
+                        &.habilidades__herramientas-adicionales-item {
+                            background-color: $background-color-black-opacity;
+                            box-shadow: 0 0 10px #fff;
+                            color: $color-tipografia-white;
+                            font-family: $estilo-tipografia-abel;
+                            font-size: 14px;
+                        }
+
+                        .habilidades__icono {
+                            width: 80px;
+                            height: auto;
+                            margin-bottom: 10px;
+                            filter: drop-shadow(0 0 1px #fff);
+                        }
+
+                        .habilidades__texto {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* LADO DERECHO */
+
+    &__right {
+        width: 40%;
+
+        .proyectos__container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+            padding: 20px;
+
+            .proyectos__container-item {
+                position: relative;
+                cursor: pointer;
+                border-radius: 20px;
+                border: 3px solid #fff;
+                transition: transform 0.5s ease, border-color 0.5s ease;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.05);
+                    border-color: $color-2;
+
+                    &:hover .proyecto__estilo-hover-texto {
+                        opacity: 1;
+                    }
+                }
+
+                .proyectos__estilo-hover {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .proyecto__estilo-hover-texto {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: $color-tipografia-white;
+                        font-family: $estilo-tipografia-abel;
+                        text-shadow: 1px 1px rgba(0, 0, 0, 1);
+                        background-color: rgb(233, 183, 103, 0.8);
+                        padding: 1rem 1.5rem;
+                        border-radius: 10px;
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

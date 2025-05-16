@@ -1,0 +1,126 @@
+@use "../base/variables" as *;
+
+
+
+.quien-soy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+
+    &__img {
+        width: 200px;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    &__nombre-completo {
+        text-align: center;
+        line-height: 0.9;
+        margin-bottom: 15px;
+    }
+
+    &__nombre {
+        font-family: $estilo-tipografia-abel;
+        font-size: 50px;
+        display: block;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        color: $color-tipografia-white;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    }
+
+    &__apellido {
+        font-size: 50px;
+        display: block;
+        color: $color-tipografia-white;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+        font-family: $estilo-tipografia-anton;
+        letter-spacing: 5px;
+    }
+
+    &__rubro {
+        display: block;
+        text-align: center;
+        background-color: $background-color;
+        border: 5px solid $color-2;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 30px;
+        color: $color-tipografia-white;
+        font-family: $estilo-tipografia-abel;
+        font-weight: bold;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    }
+
+    &__texto-container {
+        background-color: $background-color-black-opacity;
+        border: 5px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
+        font-family: $estilo-tipografia-abel;
+        color: $color-tipografia-white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: start;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+    }
+
+    &__texto {
+        margin-top: 1rem;
+    }
+
+    &__llamador-texto {
+        font-family: $estilo-tipografia-abel;
+        color: $color-tipografia-white;
+        font-size: 27px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+
+        .span-llamador {
+            font-weight: bold;
+            color: $color-2;
+        }
+    }
+
+    &__container-llamadores {
+        display: flex;
+        flex-direction: column;
+        align-items: anchor-center;
+        gap: 3rem;
+        margin: 3rem auto 0 auto;
+    }
+
+    &__boton-llamadores {
+        text-align: center;
+        padding: 10px 25px;
+        border: 1px solid #b1b1b1;
+        border-radius: 25px;
+        color: $color-tipografia-white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        transition: border 0.3s ease, scale 0.3s ease;
+        text-decoration: none;
+        background-color: $background-color-black-opacity;
+        font-family: $estilo-tipografia-abel;
+    }
+
+    &__foto {
+        padding: 20px;
+        border: 5px solid #fff;
+        border-radius: 15%;
+        margin: 15px;
+        display: inline-block;
+        background-color: $background-color-black-opacity;
+    }
+
+    &__boton-contenedor {
+        display: flex;
+        justify-self: start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}

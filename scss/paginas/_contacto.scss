@@ -1,0 +1,170 @@
+@use "../base/variables" as *;
+
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .formulario {
+        width: 50%;
+
+        &__contenedor {
+            margin: 15px;
+            padding: 25px 20px;
+            background-color: $background-color-black-opacity;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            transition: border 0.3s ease;
+        }
+
+        &__titulo {
+            margin-bottom: 10px;
+            font-family: $estilo-tipografia-anton;
+            font-size: 40px;
+            letter-spacing: 3px;
+            transition: color 0.3s ease;
+            text-align: center;
+            color: $color-tipografia-white;
+        }
+
+        &__subtitulo {
+            margin-bottom: 20px;
+            font-family: $estilo-tipografia-abel;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+            color: $color-tipografia-white;
+        }
+
+        &__label {
+            display: block;
+            margin-bottom: 10px;
+            color: $color-tipografia-white;
+            font-family: $estilo-tipografia-abel;
+        }
+
+        &__input,
+        &__textarea {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding: 6px 8px;
+            border: 1px solid #b1b1b1;
+            box-shadow: 0px 0px 15px #0003;
+            background-color: transparent;
+            border-radius: 4px;
+            color: $color-tipografia-white;
+            outline: none;
+        }
+
+        &__input::placeholder,
+        &__textarea::placeholder {
+            color: $color-tipografia-white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        &__textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        &__boton-enviar {
+            display: block;
+            margin: 20px auto 0 auto;
+            padding: 10px 25px;
+            border: 1px solid #b1b1b1;
+            border-radius: 25px;
+            background-color: $background-color-black-opacity;
+            color: $color-tipografia-white;
+            font-family: $estilo-tipografia-abel;
+            font-size: 15px;
+            letter-spacing: 1px;
+            transition: border 0.3s ease, scale 0.3s ease;
+        }
+    }
+
+    .perfil-contacto {
+        &__info-personal {
+            flex-direction: column;
+            color: $color-tipografia-white;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+        }
+
+        &__foto {
+            padding: 20px;
+            border: 5px solid #fff;
+            border-radius: 15%;
+            margin: 15px;
+            display: inline-block;
+            background-color: $background-color-black-opacity;
+
+            .perfil-contacto__img {
+                width: 200px;
+                height: auto;
+                border-radius: 10%;
+            }
+        }
+
+        &__lenguajes {
+            margin-top: 10px;
+            justify-content: center;
+            display: flex;
+            gap: 15px;
+
+            .perfil-contacto__icono-lenguajes {
+                width: 60px;
+                height: auto;
+            }
+        }
+
+        &__nombre-completo {
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 2px;
+
+            .perfil-contacto__nombre {
+                font-size: 30px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+                font-family: $estilo-tipografia-abel;
+            }
+
+            .perfil-contacto__apellido {
+                font-size: 40px;
+                font-family: $estilo-tipografia-anton;
+                letter-spacing: 5px;
+            }
+        }
+
+        .perfil-contacto__rubro {
+            letter-spacing: 5px;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 1px 1px rgba(0, 0, 0, 1);
+            font-family: $estilo-tipografia-abel;
+        }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .formulario {
+        &__contenedor:hover {
+            border: 5px solid $color-2;
+
+            .formulario__titulo {
+                color: $color-2;
+            }
+        }
+
+        &__boton-enviar:hover {
+            border: 1px solid $color-2;
+            scale: 1.05;
+            cursor: pointer;
+        }
+    }
+}
