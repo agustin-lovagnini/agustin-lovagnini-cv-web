@@ -1,5 +1,6 @@
 @use "../base/variables" as *;
 @use "../base/extend" as *;
+@use "../base/mixins" as *;
 
 #header {
     @extend %flex-center-between;
@@ -11,6 +12,19 @@
     flex-direction: row-reverse;
     background-color: #000;
     border-bottom: 5px solid $color-1;
+
+    @include mobile {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
 
     a {
         text-decoration: none;
@@ -28,6 +42,31 @@
         list-style: none;
         display: flex;
         gap: 3rem;
+
+        @include mobile {
+            flex-direction: column;
+            background-color: #000;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            gap: 15px;
+            align-items: center;
+            display: none;
+        }
+        @include tablet {
+        flex-direction: column;
+            background-color: #000;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            gap: 15px;
+            align-items: center;
+            display: none;
+    }
     }
 }
 
@@ -46,6 +85,18 @@
             color: $color-2;
         }
     }
+
+    @include mobile {
+        font-size: 17px;
+    }
+
+    @include tablet {
+        font-size: 17px;
+    }
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .hamburguesa {
@@ -55,45 +106,27 @@
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
-}
-
-.menu-toggle,
-.hamburguesa {
     display: none;
-}
 
-@media (max-width: 768px) {
-    #header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .hamburguesa {
+    @include mobile {
         display: block;
         margin-left: auto;
     }
 
-    .header__nav ul {
-        flex-direction: column;
-        background-color: #000;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-        gap: 15px;
-        align-items: center;
-        display: none;
+    @include tablet {
+        display: block;
+        margin-left: auto;
     }
+}
 
-    #menu-toggle:checked + .hamburguesa + .header__nav ul {
+@include mobile {
+    #menu-toggle:checked+.hamburguesa+.header__nav ul {
         display: flex;
     }
+}
 
-    .header__nav-item {
-        font-size: 17px;
+@include tablet {
+    #menu-toggle:checked+.hamburguesa+.header__nav ul {
+        display: flex;
     }
-
-    
 }

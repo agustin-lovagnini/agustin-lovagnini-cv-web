@@ -1,5 +1,23 @@
 {
-  "dependencies": {
-    "sass": "^1.88.0"
+  "name": "preentrega1-lovagnini",
+  "version": "1.0.0",
+  "description": "- Estructura avanzada y semántica del HTML.\r - Estilos visuales avanzados en CSS.\r - Uso de clases utilitarias de framework.\r - Integración de librerías externas.\r - Control de versiones con Git y GitHub.\r - Publicación del proyecto en GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustin-lovagnini/PreEntrega1-Lovagnini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agustin-lovagnini/PreEntrega1-Lovagnini/issues"
+  },
+  "homepage": "https://github.com/agustin-lovagnini/PreEntrega1-Lovagnini#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
   }
 }

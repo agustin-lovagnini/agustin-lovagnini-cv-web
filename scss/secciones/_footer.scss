@@ -1,5 +1,7 @@
 @use "../base/variables" as *;
 @use "../base/extend" as *;
+@use "../base/mixins" as *;
+
 
 #footer {
     background-color: #000;
@@ -7,10 +9,34 @@
     border-top: 5px solid $color-1;
     color: $color-tipografia-white;
 
+    @include mobile {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    @include tablet {
+        height: auto;
+        padding: 20px 0;
+    }
+
     .footer__container {
         @extend %flex-center-between;
         height: 100%;
         padding: 10px 25px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
     }
 
     .footer__logo {
@@ -25,6 +51,18 @@
         margin-right: 1rem;
         flex-direction: column;
         color: $color-tipografia-white;
+
+        @include mobile {
+            border: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        @include tablet {
+            border: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
 
         a {
             @extend %a-sin-estilos
@@ -41,11 +79,27 @@
 
     .footer__nombre {
         font-size: 15px;
+
+        @include mobile {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 20px;
+        }
     }
 
     .footer__rubro {
         font-size: 12px;
         text-shadow: 1px 1px rgba(0, 0, 0, 1);
+
+        @include mobile {
+            font-size: 15px;
+        }
+
+        @include tablet {
+            font-size: 15px;
+        }
     }
 
     .footer__nav {
@@ -54,6 +108,18 @@
         column-gap: 1rem;
         row-gap: 0.3rem;
         list-style: none;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+            margin-top: 2rem;
+        }
     }
 
 
@@ -62,15 +128,50 @@
         color: $botones-header-item;
         font-size: 14px;
         padding: 5px;
+
+        @include mobile {
+            font-size: 17px;
+        }
+
+        @include tablet {
+            font-size: 17px;
+        }
     }
 
     .footer__left {
         @extend %flex-center-between;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
 
     .footer__social {
         display: flex;
         gap: 1rem;
+
+        @include mobile {
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
     }
 
     .footer__icon {

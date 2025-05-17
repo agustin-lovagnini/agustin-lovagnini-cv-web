@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 
 .perfil {
@@ -7,6 +8,18 @@
     justify-content: space-evenly;
     width: 100%;
     min-height: calc(100vh - 50px);
+
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
 
     .perfil__nombre-completo {
         line-height: 0.9;
@@ -21,6 +34,14 @@
         margin-bottom: 5px;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
         font-family: $estilo-tipografia-abel;
+
+        @include mobile {
+            font-size: 40px;
+        }
+
+        @include tablet {
+            font-size: 40px;
+        }
     }
 
     .perfil__apellido {
@@ -29,6 +50,14 @@
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
         font-family: $estilo-tipografia-anton;
         letter-spacing: 5px;
+
+        @include mobile {
+            font-size: 60px;
+        }
+
+        @include tablet {
+            font-size: 60px;
+        }
     }
 
     .perfil__rubro {
@@ -40,17 +69,41 @@
         font-size: 30px;
         text-shadow: 1px 1px rgba(0, 0, 0, 1);
         font-family: $estilo-tipografia-abel;
+
+        @include mobile {
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 20px;
+        }
     }
 
     .perfil__lenguajes {
         margin-top: 20px;
         display: flex;
         gap: 15px;
+
+        @include mobile {
+            justify-content: center;
+        }
+
+        @include tablet {
+            justify-content: center;
+        }
     }
 
     .perfil__icono-lenguajes {
         width: 60px;
         height: auto;
+
+        @include mobile {
+            width: 40px;
+        }
+
+        @include tablet {
+            width: 40px;
+        }
     }
 
     .perfil__boton-contenedor {
@@ -59,6 +112,16 @@
         gap: 20px;
         margin: 0 auto;
         margin: 20px auto 0 auto;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
 
         .perfil__boton-llamadores {
             text-align: center;
@@ -95,10 +158,30 @@
         display: inline-block;
         background-color: $background-color-black-opacity;
 
+        @include mobile {
+            padding: 15px;
+            border-width: 3px;
+            margin: 30px auto;
+        }
+
+        @include tablet {
+            padding: 15px;
+            border-width: 3px;
+            margin: 30px auto;
+        }
+
         .perfil__img {
             width: 200px;
             height: auto;
             border-radius: 10%;
+
+            @include mobile {
+                width: 170px;
+            }
+
+            @include tablet {
+                width: 170px;
+            }
         }
     }
 }

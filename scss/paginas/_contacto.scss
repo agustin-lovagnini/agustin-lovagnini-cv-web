@@ -1,13 +1,33 @@
 @use "../base/variables" as *;
-
+@use "../base/mixins" as *;
 
 .contacto {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
     .formulario {
         width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
 
         &__contenedor {
             margin: 15px;
@@ -16,6 +36,16 @@
             border: 5px solid #fff;
             border-radius: 20px;
             transition: border 0.3s ease;
+
+            @include mobile {
+                margin: 5px;
+                padding: 20px;
+            }
+
+            @include tablet {
+                margin: 5px;
+                padding: 20px;
+            }
         }
 
         &__titulo {
@@ -26,6 +56,14 @@
             transition: color 0.3s ease;
             text-align: center;
             color: $color-tipografia-white;
+
+            @include mobile {
+                font-size: 30px;
+            }
+
+            @include tablet {
+                font-size: 30px;
+            }
         }
 
         &__subtitulo {
@@ -35,6 +73,14 @@
             letter-spacing: 2px;
             text-align: center;
             color: $color-tipografia-white;
+
+            @include mobile {
+                font-size: 15px;
+            }
+
+            @include tablet {
+                font-size: 15px;
+            }
         }
 
         &__label {
@@ -87,6 +133,19 @@
     }
 
     .perfil-contacto {
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+
+        @include tablet {
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+
         &__info-personal {
             flex-direction: column;
             color: $color-tipografia-white;
@@ -101,10 +160,40 @@
             display: inline-block;
             background-color: $background-color-black-opacity;
 
+            @include mobile {
+                border: none;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+            }
+
+            @include tablet {
+                border: none;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+            }
+
             .perfil-contacto__img {
                 width: 200px;
                 height: auto;
                 border-radius: 10%;
+
+                @include mobile {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 30px #000;
+                }
+
+                @include tablet {
+                    width: 150px;
+                    height: auto;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 30px #000;
+                }
             }
         }
 
@@ -114,9 +203,27 @@
             display: flex;
             gap: 15px;
 
+            @include mobile {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            @include tablet {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
             .perfil-contacto__icono-lenguajes {
                 width: 60px;
                 height: auto;
+
+                @include mobile {
+                    width: 50px;
+                }
+
+                @include tablet {
+                    width: 50px;
+                }
             }
         }
 
@@ -131,12 +238,28 @@
                 letter-spacing: 2px;
                 margin-bottom: 5px;
                 font-family: $estilo-tipografia-abel;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+
+                @include tablet {
+                    font-size: 20px;
+                }
             }
 
             .perfil-contacto__apellido {
                 font-size: 40px;
                 font-family: $estilo-tipografia-anton;
                 letter-spacing: 5px;
+
+                @include mobile {
+                    font-size: 30px;
+                }
+
+                @include tablet {
+                    font-size: 30px;
+                }
             }
         }
 
@@ -146,6 +269,16 @@
             font-size: 30px;
             text-shadow: 1px 1px rgba(0, 0, 0, 1);
             font-family: $estilo-tipografia-abel;
+
+            @include mobile {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            @include tablet {
+                font-size: 20px;
+                text-align: center;
+            }
         }
     }
 }

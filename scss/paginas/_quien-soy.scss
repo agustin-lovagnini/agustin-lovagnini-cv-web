@@ -1,5 +1,5 @@
 @use "../base/variables" as *;
-
+@use "../base/mixins" as *;
 
 
 .quien-soy {
@@ -9,10 +9,40 @@
     gap: 50px;
     padding: 50px;
 
+    @include mobile {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    @include tablet {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
     &__img {
         width: 200px;
         height: auto;
         border-radius: 10%;
+
+        @include mobile {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 30px #000;
+        }
+
+        @include tablet {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 30px #000;
+        }
     }
 
     &__nombre-completo {
@@ -30,6 +60,14 @@
         margin-bottom: 5px;
         color: $color-tipografia-white;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+
+        @include mobile {
+            font-size: 30px;
+        }
+
+        @include tablet {
+            font-size: 30px;
+        }
     }
 
     &__apellido {
@@ -39,6 +77,14 @@
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
         font-family: $estilo-tipografia-anton;
         letter-spacing: 5px;
+
+        @include mobile {
+            font-size: 30px;
+        }
+
+        @include tablet {
+            font-size: 30px;
+        }
     }
 
     &__rubro {
@@ -66,6 +112,14 @@
         letter-spacing: 1px;
         text-align: start;
         text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+
+        @include mobile {
+            font-size: 16px;
+        }
+
+        @include tablet {
+            font-size: 16px;
+        }
     }
 
     &__texto {
@@ -106,6 +160,17 @@
         text-decoration: none;
         background-color: $background-color-black-opacity;
         font-family: $estilo-tipografia-abel;
+
+        @include mobile {
+            width: 100%;
+        max-width: 250px;
+        }
+        @include tablet {
+            width: 100%;
+        max-width: 250px;
+        }
+        
+        
     }
 
     &__foto {
@@ -115,6 +180,16 @@
         margin: 15px;
         display: inline-block;
         background-color: $background-color-black-opacity;
+
+        @include mobile {
+            background-color: transparent;
+            border: none;
+        }
+
+        @include tablet {
+            background-color: transparent;
+            border: none;
+        }
     }
 
     &__boton-contenedor {
@@ -122,5 +197,10 @@
         justify-self: start;
         gap: 20px;
         flex-wrap: wrap;
+
+        @include mobile {
+            flex-direction: column;
+        align-items: center;
+        }
     }
 }
