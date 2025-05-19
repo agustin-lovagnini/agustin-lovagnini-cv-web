@@ -102,6 +102,14 @@
             transform: scale(1.03);
             border-color: $color-2;
         }
+
+        @media (hover: none),
+                (pointer: coarse) {
+                    &:hover {
+                        transform: none !important;
+                        border-color: #fff !important;
+                    }
+                }
     }
 
     &__media {

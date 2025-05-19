@@ -82,104 +82,153 @@
         }
 
         ul {
-
             &.habilidades__otros-conocimientos-lista {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin: 25px 0;
+                justify-content: center;
+                align-items: center;
+
                 @include mobile {
-                    gap: 5px;
+                    flex-direction: row;
+                    text-align: start;
+                    gap: 20px;
                 }
 
                 @include tablet {
-                    gap: 5px;
+                    gap: 20px;
+                }
+
+                li.habilidades__otros-conocimientos-item {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 10px;
+
+                    @include mobile {
+                        gap: 10px;
+                    }
+
+                    @include tablet {
+                        gap: 10px;
+                    }
+
+                    .habilidades__icono {
+                        width: 80px;
+                        height: auto;
+                        margin-bottom: 10px;
+                        filter: drop-shadow(0 0 1px #fff);
+
+                        @include mobile {
+                            width: 60px;
+                            margin-bottom: 0;
+                        }
+
+                        @include tablet {
+                            width: 60px;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .habilidades__texto {
+                        font-size: 16px;
+
+                        @include mobile {
+                            font-size: 14px;
+                        }
+
+                        @include tablet {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
 
             &.habilidades__lenguajes-lista,
-            &.habilidades__herramientas-adicionales-lista,
-            &.habilidades__otros-conocimientos-lista {
+            &.habilidades__herramientas-adicionales-lista {
                 list-style-type: none;
                 display: flex;
                 flex-direction: row;
                 gap: 40px;
                 margin: 25px 0;
 
-                li {
+                @include mobile {
+                    flex-direction: column;
+                    gap: 20px;
+                }
 
-                    &.habilidades__lenguajes-lista-item,
-                    &.habilidades__herramientas-adicionales-item,
-                    &.habilidades__otros-conocimientos-item {
-                        display: flex;
+                @include tablet {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                li.habilidades__lenguajes-lista-item,
+                li.habilidades__herramientas-adicionales-item {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 10px;
+
+                    @include mobile {
+                        gap: 10px;
+                    }
+
+                    @include tablet {
+                        gap: 10px;
+                    }
+
+                    background-color: $background-color-black-opacity;
+                    box-shadow: 0 0 10px #fff;
+                    color: $color-tipografia-white;
+                    font-family: $estilo-tipografia-abel;
+                    font-size: 14px;
+
+                    @include mobile {
+                        width: 100%;
+                        flex-direction: row;
+                        gap: 20px;
                         align-items: center;
-                        flex-direction: column;
-                        text-align: center;
-                        border-radius: 10px;
-                        padding: 10px;
+                        text-align: start;
+                    }
+
+                    @include tablet {
+                        width: 100%;
+                        flex-direction: row;
+                        gap: 20px;
+                        align-items: center;
+                        text-align: start;
+                    }
+
+                    .habilidades__icono {
+                        width: 80px;
+                        height: auto;
+                        filter: drop-shadow(0 0 1px #fff);
 
                         @include mobile {
-                            flex-direction: row;
-                            text-align: start;
-                            gap: 10px;
+                            width: 60px;
                         }
 
                         @include tablet {
-                            flex-direction: row;
-                            text-align: start;
-                            gap: 10px;
+                            width: 60px;
                         }
+                    }
 
-                        &.habilidades__lenguajes-lista-item,
-                        &.habilidades__herramientas-adicionales-item {
-                            background-color: $background-color-black-opacity;
-                            box-shadow: 0 0 10px #fff;
-                            color: $color-tipografia-white;
-                            font-family: $estilo-tipografia-abel;
+                    .habilidades__texto {
+                        font-size: 16px;
+
+                        @include mobile {
                             font-size: 14px;
-
-                            @include mobile {
-                                width: 90%;
-                            }
-
-                            @include tablet {
-                                width: 90%;
-                            }
-
-                            @include mobile {
-                                flex-direction: column;
-                                gap: 20px;
-                                align-items: center;
-                            }
-
-                            @include tablet {
-                                flex-direction: column;
-                                gap: 20px;
-                                align-items: center;
-                            }
                         }
 
-                        .habilidades__icono {
-                            width: 80px;
-                            height: auto;
-                            margin-bottom: 10px;
-                            filter: drop-shadow(0 0 1px #fff);
-
-                            @include mobile {
-                                width: 60px;
-                            }
-
-                            @include tablet {
-                                width: 60px;
-                            }
-                        }
-
-                        .habilidades__texto {
-                            font-size: 16px;
-
-                            @include mobile {
-                                font-size: 14px;
-                            }
-
-                            @include tablet {
-                                font-size: 14px;
-                            }
+                        @include tablet {
+                            font-size: 14px;
                         }
                     }
                 }
@@ -220,7 +269,7 @@
                 padding-bottom: 40px;
             }
 
-            .hanilidades__proyectos-container-item {
+            .habilidades__proyectos-container-item {
                 position: relative;
                 cursor: pointer;
                 border-radius: 20px;
@@ -236,6 +285,19 @@
                         opacity: 1;
                     }
                 }
+
+                @media (hover: none),
+                (pointer: coarse) {
+                    &:hover {
+                        transform: none !important;
+                        border-color: #fff !important;
+
+                        .habilidades__proyecto-estilo-hover-texto {
+                            opacity: 0 !important;
+                        }
+                    }
+                }
+
 
                 .habilidades__proyectos-estilo-hover {
                     position: relative;

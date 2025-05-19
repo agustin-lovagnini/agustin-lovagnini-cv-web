@@ -893,12 +893,13 @@
 
     /*! HABILIDADES */
 
-    .proyectos__container-item:hover {
+
+    .habilidades__proyectos-container-item:hover {
         transform: scale(1.05);
         border-color: var(--color-2);
     }
 
-    .proyectos__estilo-hover:hover .proyecto__estilo-hover-texto {
+    .habilidades__proyectos-estilo-hover:hover .habilidades__proyecto-estilo-hover-texto {
         opacity: 1;
     }
 

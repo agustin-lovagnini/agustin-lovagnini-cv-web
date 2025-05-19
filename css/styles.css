@@ -22,7 +22,7 @@
 }
 
 /*colores*/
-/**tipografia*/
+/*tipografia*/
 #footer .footer__container, #footer .footer__left, #header {
   display: flex;
   justify-content: space-between;
@@ -920,24 +920,29 @@
     font-size: 16px;
   }
 }
+.habilidades__left ul.habilidades__otros-conocimientos-lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 576px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista {
-    gap: 5px;
+    flex-direction: row;
+    text-align: start;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista {
-    gap: 5px;
+    gap: 20px;
   }
 }
-.habilidades__left ul.habilidades__lenguajes-lista, .habilidades__left ul.habilidades__herramientas-adicionales-lista, .habilidades__left ul.habilidades__otros-conocimientos-lista {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin: 25px 0;
-}
-.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
+.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -946,20 +951,74 @@
   padding: 10px;
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
-    flex-direction: row;
-    text-align: start;
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
     gap: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
-    flex-direction: row;
-    text-align: start;
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item {
     gap: 10px;
   }
 }
-.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item {
+.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+@media screen and (max-width: 576px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+    width: 60px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+    width: 60px;
+    margin-bottom: 0;
+  }
+}
+.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+  font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+    font-size: 14px;
+  }
+}
+.habilidades__left ul.habilidades__lenguajes-lista, .habilidades__left ul.habilidades__herramientas-adicionales-lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 25px 0;
+}
+@media screen and (max-width: 576px) {
+  .habilidades__left ul.habilidades__lenguajes-lista, .habilidades__left ul.habilidades__herramientas-adicionales-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .habilidades__left ul.habilidades__lenguajes-lista, .habilidades__left ul.habilidades__herramientas-adicionales-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item,
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item,
+.habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
   background-color: rgba(28, 28, 28, 0.8);
   box-shadow: 0 0 10px #fff;
   color: #fff;
@@ -967,55 +1026,78 @@
   font-size: 14px;
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item {
-    width: 90%;
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item {
+    gap: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item {
-    width: 90%;
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item {
+    gap: 10px;
   }
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item {
-    flex-direction: column;
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item {
+    width: 100%;
+    flex-direction: row;
     gap: 20px;
     align-items: center;
+    text-align: start;
   }
 }
 @media screen and (max-width: 768px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__lenguajes-lista-item, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item.habilidades__herramientas-adicionales-item {
-    flex-direction: column;
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item {
+    width: 100%;
+    flex-direction: row;
     gap: 20px;
     align-items: center;
+    text-align: start;
   }
 }
-.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+.habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono {
   width: 80px;
   height: auto;
-  margin-bottom: 10px;
   filter: drop-shadow(0 0 1px #fff);
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono {
     width: 60px;
   }
 }
 @media screen and (max-width: 768px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__icono, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__icono,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono {
     width: 60px;
   }
 }
-.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+.habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+.habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto {
   font-size: 16px;
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
-  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__otros-conocimientos-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__lenguajes-lista-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+  .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
+  .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto {
     font-size: 14px;
   }
 }
@@ -1054,7 +1136,7 @@
     padding-bottom: 40px;
   }
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item {
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item {
   position: relative;
   cursor: pointer;
   border-radius: 20px;
@@ -1062,24 +1144,33 @@
   transition: transform 0.5s ease, border-color 0.5s ease;
   overflow: hidden;
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item:hover {
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item:hover {
   transform: scale(1.05);
   border-color: rgb(233, 183, 103);
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item:hover:hover .habilidades__proyecto-estilo-hover-texto {
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item:hover:hover .habilidades__proyecto-estilo-hover-texto {
   opacity: 1;
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item .habilidades__proyectos-estilo-hover {
+@media (hover: none), (pointer: coarse) {
+  .habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item:hover {
+    transform: none !important;
+    border-color: #fff !important;
+  }
+  .habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item:hover .habilidades__proyecto-estilo-hover-texto {
+    opacity: 0 !important;
+  }
+}
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item .habilidades__proyectos-estilo-hover {
   position: relative;
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item .habilidades__proyectos-estilo-hover img {
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item .habilidades__proyectos-estilo-hover img {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.habilidades__right .habilidades__proyectos-container .hanilidades__proyectos-container-item .habilidades__proyectos-estilo-hover .habilidades__proyecto-estilo-hover-texto {
+.habilidades__right .habilidades__proyectos-container .habilidades__proyectos-container-item .habilidades__proyectos-estilo-hover .habilidades__proyecto-estilo-hover-texto {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1200,6 +1291,12 @@
 .proyectos__item:hover {
   transform: scale(1.03);
   border-color: rgb(233, 183, 103);
+}
+@media (hover: none), (pointer: coarse) {
+  .proyectos__item:hover {
+    transform: none !important;
+    border-color: #fff !important;
+  }
 }
 .proyectos__media {
   position: relative;
