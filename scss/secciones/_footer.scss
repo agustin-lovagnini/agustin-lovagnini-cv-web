@@ -180,13 +180,11 @@
         transition: color 0.2s ease, color 0.3s ease;
 
         @media (hover: hover) and (pointer: fine) {
-
-            /* FOOTER */
             &:hover {
                 transform: scale(1.05);
             }
 
-            .footer__nav-link:hover,
+            &:hover,
             &:hover {
                 color: $color-tipografia-white;
             }

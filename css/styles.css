@@ -337,13 +337,10 @@
   transition: color 0.2s ease, color 0.3s ease;
 }
 @media (hover: hover) and (pointer: fine) {
-  #footer .footer__icon {
-    /* FOOTER */
-  }
   #footer .footer__icon:hover {
     transform: scale(1.05);
   }
-  #footer .footer__icon .footer__nav-link:hover, #footer .footer__icon:hover {
+  #footer .footer__icon:hover, #footer .footer__icon:hover {
     color: #fff;
   }
 }
