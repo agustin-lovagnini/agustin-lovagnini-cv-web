@@ -8,6 +8,7 @@
     justify-content: space-evenly;
     width: 100%;
     min-height: calc(100vh - 50px);
+    padding: 50px;
 
     @include mobile {
         flex-direction: column;
@@ -24,6 +25,14 @@
     .perfil__nombre-completo {
         line-height: 0.9;
         margin-bottom: 15px;
+
+        @include mobile {
+            line-height: 1;
+        }
+
+        @include tablet {
+            line-height: 1;
+        }
     }
 
     .perfil__nombre {
@@ -40,7 +49,7 @@
         }
 
         @include tablet {
-            font-size: 40px;
+            font-size: 70px;
         }
     }
 
@@ -52,11 +61,11 @@
         letter-spacing: 5px;
 
         @include mobile {
-            font-size: 60px;
+            font-size: 50px;
         }
 
         @include tablet {
-            font-size: 60px;
+            font-size: 90px;
         }
     }
 
@@ -71,11 +80,11 @@
         font-family: $estilo-tipografia-abel;
 
         @include mobile {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         @include tablet {
-            font-size: 20px;
+            font-size: 50px;
         }
     }
 
@@ -90,6 +99,7 @@
 
         @include tablet {
             justify-content: center;
+            gap: 35px;
         }
     }
 
@@ -98,11 +108,11 @@
         height: auto;
 
         @include mobile {
-            width: 40px;
+            width: 55px;
         }
 
         @include tablet {
-            width: 40px;
+            width: 80px;
         }
     }
 
@@ -110,17 +120,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        margin: 0 auto;
         margin: 20px auto 0 auto;
 
         @include mobile {
             grid-template-columns: 1fr;
             gap: 15px;
+            margin: 40px auto 0 auto;
         }
 
         @include tablet {
             grid-template-columns: 1fr;
             gap: 15px;
+            margin: 40px auto 0 auto;
         }
 
         .perfil__boton-llamadores {
@@ -135,6 +146,16 @@
             text-decoration: none;
             background-color: $background-color-black-opacity;
             font-family: $estilo-tipografia-abel;
+
+            @include mobile {
+                font-size: 18px;
+                padding: 8px 20px;
+            }
+
+            @include tablet {
+                font-size: 25px;
+                padding: 10px 25px;
+            }
 
             &:nth-child(3) {
                 grid-column: 1 / -1;
@@ -165,7 +186,7 @@
         }
 
         @include tablet {
-            padding: 15px;
+            padding: 25px;
             border-width: 3px;
             margin: 30px auto;
         }
@@ -180,7 +201,7 @@
             }
 
             @include tablet {
-                width: 170px;
+                width: 250px;
             }
         }
     }

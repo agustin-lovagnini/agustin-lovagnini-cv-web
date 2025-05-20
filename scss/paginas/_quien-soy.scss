@@ -161,6 +161,14 @@
         background-color: $background-color-black-opacity;
         font-family: $estilo-tipografia-abel;
 
+        @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    border: 1px solid $color-2;
+                    scale: 1.05;
+                    cursor: pointer;
+                }
+            }
+
         @include mobile {
             width: 100%;
         max-width: 250px;
