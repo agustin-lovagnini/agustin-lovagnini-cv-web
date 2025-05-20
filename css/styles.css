@@ -1363,7 +1363,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__img {
-    width: 150px;
+    width: 220px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 30px #000;
@@ -1386,12 +1386,12 @@
 }
 @media screen and (max-width: 576px) {
   .quien-soy__nombre {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__nombre {
-    font-size: 30px;
+    font-size: 55px;
   }
 }
 .quien-soy__apellido {
@@ -1404,12 +1404,12 @@
 }
 @media screen and (max-width: 576px) {
   .quien-soy__apellido {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__apellido {
-    font-size: 30px;
+    font-size: 65px;
   }
 }
 .quien-soy__rubro {
@@ -1425,6 +1425,16 @@
   font-weight: bold;
   text-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
+@media screen and (max-width: 576px) {
+  .quien-soy__rubro {
+    font-size: 25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .quien-soy__rubro {
+    font-size: 50px;
+  }
+}
 .quien-soy__texto-container {
   background-color: rgba(28, 28, 28, 0.8);
   border: 5px solid #fff;
@@ -1432,19 +1442,19 @@
   padding: 20px;
   font-family: "Abel", sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
-  text-align: start;
+  text-align: center;
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
 }
 @media screen and (max-width: 576px) {
   .quien-soy__texto-container {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__texto-container {
-    font-size: 16px;
+    font-size: 28px;
   }
 }
 .quien-soy__texto {
@@ -1457,6 +1467,16 @@
   letter-spacing: 1px;
   text-align: center;
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+@media screen and (max-width: 576px) {
+  .quien-soy__llamador-texto {
+    font-size: 22px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .quien-soy__llamador-texto {
+    font-size: 35px;
+  }
 }
 .quien-soy__llamador-texto .span-llamador {
   font-weight: bold;
@@ -1493,12 +1513,14 @@
   .quien-soy__boton-llamadores {
     width: 100%;
     max-width: 250px;
+    font-size: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__boton-llamadores {
     width: 100%;
     max-width: 250px;
+    font-size: 25px;
   }
 }
 .quien-soy__foto {
@@ -1523,14 +1545,17 @@
 }
 .quien-soy__boton-contenedor {
   display: flex;
-  justify-self: start;
   gap: 20px;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (max-width: 576px) {
   .quien-soy__boton-contenedor {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
