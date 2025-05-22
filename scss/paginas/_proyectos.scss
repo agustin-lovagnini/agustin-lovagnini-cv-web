@@ -14,7 +14,7 @@
     }
 
     @include tablet {
-        padding: 20px;
+        padding: 70px;
     }
 
     &__titulo {
@@ -26,11 +26,11 @@
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 
         @include mobile {
-            font-size: 35px;
+            font-size: 45px;
         }
 
         @include tablet {
-            font-size: 35px;
+            font-size: 80px;
         }
     }
 
@@ -39,17 +39,18 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
         padding: 20px;
+        margin-top: 25px;
 
         @include mobile {
             grid-template-columns: 1fr;
             padding: 10px;
-            gap: 15px;
+            gap: 25px;
         }
 
         @include tablet {
             grid-template-columns: 1fr;
             padding: 10px;
-            gap: 15px;
+            gap: 40px;
         }
     }
 
@@ -75,11 +76,11 @@
             padding: 10px 5px;
 
             @include mobile {
-                font-size: 18px;
+                font-size: 25px;
             }
 
             @include tablet {
-                font-size: 18px;
+                font-size: 40px;
             }
         }
 
@@ -90,11 +91,11 @@
             color: $color-tipografia-white;
 
             @include mobile {
-                font-size: 15px;
+                font-size: 20px;
             }
 
             @include tablet {
-                font-size: 15px;
+                font-size: 30px;
             }
         }
 
@@ -104,12 +105,12 @@
         }
 
         @media (hover: none),
-                (pointer: coarse) {
-                    &:hover {
-                        transform: none !important;
-                        border-color: #fff !important;
-                    }
-                }
+        (pointer: coarse) {
+            &:hover {
+                transform: none !important;
+                border-color: #fff !important;
+            }
+        }
     }
 
     &__media {
