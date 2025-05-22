@@ -16,7 +16,7 @@
 
     @include tablet {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
     /* LADO IZQUIERDO */
@@ -52,11 +52,11 @@
             z-index: 2;
 
             @include mobile {
-                font-size: 25px;
+                font-size: 28px;
             }
 
             @include tablet {
-                font-size: 25px;
+                font-size: 40px;
             }
         }
 
@@ -71,13 +71,14 @@
             letter-spacing: 1px;
             position: relative;
             z-index: 1;
+            text-align: center;
 
             @include mobile {
-                font-size: 16px;
+                font-size: 20px;
             }
 
             @include tablet {
-                font-size: 16px;
+                font-size: 30px;
             }
         }
 
@@ -143,7 +144,7 @@
                         }
 
                         @include tablet {
-                            font-size: 14px;
+                            font-size: px;
                         }
                     }
                 }
@@ -174,8 +175,13 @@
                     flex-direction: column;
                     text-align: center;
                     border-radius: 10px;
-                    padding: 10px;
-
+                    padding: 35px;
+                    background-color: $background-color-black-opacity;
+                    box-shadow: 0 0 10px #fff;
+                    color: $color-tipografia-white;
+                    font-family: $estilo-tipografia-abel;
+                    font-size: 14px;
+                    
                     @include mobile {
                         gap: 10px;
                     }
@@ -184,11 +190,7 @@
                         gap: 10px;
                     }
 
-                    background-color: $background-color-black-opacity;
-                    box-shadow: 0 0 10px #fff;
-                    color: $color-tipografia-white;
-                    font-family: $estilo-tipografia-abel;
-                    font-size: 14px;
+                    
 
                     @include mobile {
                         width: 100%;
@@ -224,11 +226,11 @@
                         font-size: 16px;
 
                         @include mobile {
-                            font-size: 14px;
+                            font-size: 18px;
                         }
 
                         @include tablet {
-                            font-size: 14px;
+                            font-size: 28px;
                         }
                     }
                 }
