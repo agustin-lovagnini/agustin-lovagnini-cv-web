@@ -11,7 +11,7 @@
   width: 100%;
   height: 100vh;
   min-height: calc(100vh - 50px);
-  background: url(../img/img-fondo.jpg) center/cover no-repeat;
+  background: url(../img/img-fondo.webp) center/cover no-repeat;
   z-index: -2;
 }
 
