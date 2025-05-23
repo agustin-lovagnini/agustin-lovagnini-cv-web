@@ -1028,35 +1028,22 @@
     gap: 10px;
   }
 }
-.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
   width: 80px;
   height: auto;
   margin-bottom: 10px;
   filter: drop-shadow(0 0 1px #fff);
 }
 @media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
     width: 60px;
     margin-bottom: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
-  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__icono {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
     width: 60px;
     margin-bottom: 0;
-  }
-}
-.habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
-  font-size: 16px;
-}
-@media screen and (max-width: 576px) {
-  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
-    font-size: 14px;
-  }
-}
-@media (min-width: 576px) and (max-width: 1024px) {
-  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__texto {
-    font-size: px;
   }
 }
 .habilidades__left ul.habilidades__lenguajes-lista, .habilidades__left ul.habilidades__herramientas-adicionales-lista {
@@ -1134,6 +1121,7 @@
 .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__icono {
   width: 80px;
   height: auto;
+  margin-bottom: 20px;
   filter: drop-shadow(0 0 1px #fff);
 }
 @media screen and (max-width: 576px) {
@@ -1166,7 +1154,7 @@
   .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
   .habilidades__left ul.habilidades__lenguajes-lista li.habilidades__herramientas-adicionales-item .habilidades__texto, .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__lenguajes-lista-item .habilidades__texto,
   .habilidades__left ul.habilidades__herramientas-adicionales-lista li.habilidades__herramientas-adicionales-item .habilidades__texto {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 .habilidades__right {
