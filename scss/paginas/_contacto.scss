@@ -219,23 +219,12 @@
             }
 
             .perfil-contacto__img {
-                width: 200px;
-                height: auto;
-                border-radius: 10%;
-
+                @include agus-img(200px, 175px, 260px, 10%, 50%, 50%, true);
                 @include mobile {
-                    width: 175px;
-                    height: auto;
-                    border-radius: 50%;
-                    box-shadow: 0px 0px 30px #000;
                     margin: 30px 0px 5px 0px;
                 }
 
                 @include tablet {
-                    width: 260px;
-                    height: auto;
-                    border-radius: 50%;
-                    box-shadow: 0px 0px 30px #000;
                     margin: 30px 0px 5px 0px;
                 }
             }
@@ -258,16 +247,7 @@
             }
 
             .perfil-contacto__icono-lenguajes {
-                width: 70px;
-                height: auto;
-
-                @include mobile {
-                    width: 60px;
-                }
-
-                @include tablet {
-                    width: 80px;
-                }
+                @include icono-lenguajes(70px, 60px, 80px);
             }
         }
 

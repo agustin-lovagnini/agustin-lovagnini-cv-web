@@ -23,6 +23,7 @@
 
 /*colores*/
 /*tipografia*/
+/*icono lenguajes*/
 #footer .footer__container, #footer .footer__left, #header {
   display: flex;
   justify-content: space-between;
@@ -542,11 +543,13 @@
 @media screen and (max-width: 576px) {
   .perfil .perfil__foto .perfil__img {
     width: 170px;
+    border-radius: 10%;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .perfil .perfil__foto .perfil__img {
     width: 250px;
+    border-radius: 10%;
   }
 }
 
@@ -784,18 +787,24 @@
 @media screen and (max-width: 576px) {
   .contacto .perfil-contacto__foto .perfil-contacto__img {
     width: 175px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 30px #000;
-    margin: 30px 0px 5px 0px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .perfil-contacto__foto .perfil-contacto__img {
     width: 260px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 30px #000;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contacto .perfil-contacto__foto .perfil-contacto__img {
+    margin: 30px 0px 5px 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .contacto .perfil-contacto__foto .perfil-contacto__img {
     margin: 30px 0px 5px 0px;
   }
 }
@@ -1037,12 +1046,20 @@
 @media screen and (max-width: 576px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
     width: 60px;
-    margin-bottom: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
     width: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
     margin-bottom: 0;
   }
 }
@@ -1401,7 +1418,6 @@
 @media screen and (max-width: 576px) {
   .quien-soy__img {
     width: 150px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 30px #000;
   }
@@ -1409,7 +1425,6 @@
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__img {
     width: 220px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 30px #000;
   }

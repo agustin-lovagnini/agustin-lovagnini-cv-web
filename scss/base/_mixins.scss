@@ -9,3 +9,47 @@
         @content;
     }
 }
+
+@mixin agus-img($width-desktop,
+    $width-mobile,
+    $width-tablet,
+    $radius-desktop: 10%,
+    $radius-mobile: $radius-desktop,
+    $radius-tablet: $radius-desktop,
+    $with-shadow: false) {
+    width: $width-desktop;
+    height: auto;
+    border-radius: $radius-desktop;
+
+    @include mobile {
+        width: $width-mobile;
+        border-radius: $radius-mobile;
+
+        @if $with-shadow {
+            box-shadow: 0px 0px 30px #000;
+        }
+    }
+
+    @include tablet {
+        width: $width-tablet;
+        border-radius: $radius-tablet;
+
+        @if $with-shadow {
+            box-shadow: 0px 0px 30px #000;
+        }
+    }
+}
+
+/*icono lenguajes*/
+@mixin icono-lenguajes($width-desktop, $width-mobile, $width-tablet, $height: auto) {
+    width: $width-desktop;
+    height: $height;
+
+    @include mobile {
+        width: $width-mobile;
+    }
+
+    @include tablet {
+        width: $width-tablet;
+    }
+}
