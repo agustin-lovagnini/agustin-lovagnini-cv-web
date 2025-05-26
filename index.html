@@ -1,109 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Agustin Lovagnini</title>
-  
-    <!-- Tipografia Abton y Abel-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FavIcon -->
-    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="Portfolio profesional de Agustín Lovagnini. Conocé mi experiencia, habilidades y proyectos en desarrollo web, diseño visual e ideas creativas para potenciar tu marca. Trabajo con compromiso y pasión en cada detalle, buscando siempre soluciones que se adapten a vos. Explorá mi trayectoria y descubrí cómo puedo ayudarte a llevar tu presencia digital al siguiente nivel. Contactame para crear algo juntos." />
+  <meta name="keywords" content="front-end, html, css, sass, git, cv, proyectos" />
+  <meta name="author" content="Agustín Varela Alberto Lovagnini" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
-  </head>
-  <body>
+  <!-- Redes sociales -->
+  <meta property="og:title" content="CV de Agustín Lovagnini - Desarrollador Web" />
+  <meta property="og:description"
+    content="¿Estas busando un desarrollado front-end? Conocé mis habilidades, experiencia y proyectos como desarrollador web. ¡Trabajemos juntos!" />
+<meta property="og:image" content="https://agustin-lovagnini.github.io/PreEntrega1-Lovagnini/img/logos/og-img-compartir.png">
+  <meta property="og:url" content="https://agustin-lovagnini.github.io/PreEntrega1-Lovagnini/" />
+  <meta property="og:type" content="website" />
 
+  <!-- Para twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CV de Agustín Lovagnini - Desarrollador Web" />
+  <meta name="twitter:description" content="Portfolio online con proyectos, habilidades y más." />
+<meta property="og:image" content="https://agustin-lovagnini.github.io/PreEntrega1-Lovagnini/img/logos/og-img-compartir.png">
+
+<!-- Evita que el navegador almacene en caché páginas antiguas -->
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+
+
+  <title>CV Agustin Lovagnini</title>
+
+  <!-- Tipografia Abton y Abel-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="../img/logos/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
   <!--header-->
 
-    <header id="header">
-      <a href="#" class="header__logo">VL</a>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburguesa"><i class="fa-solid fa-bars"></i></label>      
-      
-      
-      <nav class="header__nav">
-        <ul>
-          <li><a href="#" class="header__nav-item">Inicio</a></li>
-          <li><a href="./pages/quien-soy.html" class="header__nav-item">¿Quien soy?</a></li>
-          <li><a href="./pages/proyectos.html" class="header__nav-item">Proyectos</a></li>
-          <li><a href="./pages/habilidades.html" class="header__nav-item">Hablilidades</a></li>
-          <li><a href="./pages/contacto.html" class="header__nav-item">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header id="header">
+    <a href="#" class="header__logo">VL</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburguesa"><i class="fa-solid fa-bars"></i></label>
 
-    <!--main-->
-    
-    <main id="main">
-      <div class="fondo-fixed"></div>
-        <section class="perfil">
-          <!-- Título del nombre y apellido -->
-          <div>
-            <h1 class="perfil__nombre-completo">
-              <span class="perfil__nombre">Agustin</span><br>
-              <span class="perfil__apellido">Lovagnini</span>
-            </h1>
-            <p class="perfil__rubro">Desarrollador web</p>
-            <div class="perfil__lenguajes">
-              <img class="perfil__icono-lenguajes" src="./img/logos/logo-html.svg" alt="HTML">
-              <img class="perfil__icono-lenguajes" src="./img/logos/logo-css.svg" alt="CSS">
-              <img class="perfil__icono-lenguajes" src="./img/logos/logo-js.svg" alt="JAVASCRIPT">
-              <img class="perfil__icono-lenguajes" src="./img/logos/logo-git.svg" alt="GIT">
-              
-            </div>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#" class="header__nav-item">Inicio</a></li>
+        <li>
+          <a href="./pages/quien-soy.html" class="header__nav-item">¿Quien soy?</a>
+        </li>
+        <li>
+          <a href="./pages/proyectos.html" class="header__nav-item">Proyectos</a>
+        </li>
+        <li>
+          <a href="./pages/habilidades.html" class="header__nav-item">Hablilidades</a>
+        </li>
+        <li>
+          <a href="./pages/contacto.html" class="header__nav-item">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="perfil__boton-contenedor">
-              <a href="./pages/proyectos.html" class="perfil__boton-llamadores">Diseños</a>
-              <a href="./pages/habilidades.html" class="perfil__boton-llamadores">Habilidades</a>
-              <a href="./pages/contacto.html" class="perfil__boton-llamadores">Trabajamos juntos</a>
-            </div>
+  <!--main-->
 
-          </div>
-          <div class="perfil__foto">
-            <img class="perfil__img" src="./img/foto-perfil.webp" alt="foto de perfil">
-          </div>
-        </section>
-
-    </main>
-
-    <!--footer-->
-
-    <footer id="footer">
-      <div class="footer__container">
-        <div class="footer__left">
-          <div class="footer__info">
-            <a href="#" class="footer__logo">
-              <h3 class="footer__nombre">Agustin<br>Lovagnini</h3>
-              <p class="footer__rubro">Desarrollador web</p>
-            </a>
-          </div>
-          <nav>
-            <ul class="footer__nav">
-              <li><a href="./pages/quien-soy.html" class="footer__nav-link">¿Quien soy?</a></li>
-              <li><a href="./pages/proyectos.html" class="footer__nav-link">Proyectos</a></li>
-              <li><a href="./pages/habilidades.html" class="footer__nav-link">Habilidades</a></li>
-              <li><a href="./pages/contacto.html" class="footer__nav-link">Contacto</a></li>
-            </ul>
-          </nav>
+  <main id="main">
+    <div class="fondo-fixed"></div>
+    <section class="perfil">
+      <!-- Título del nombre y apellido -->
+      <div>
+        <h1 class="perfil__nombre-completo">
+          <span class="perfil__nombre">Agustin</span><br />
+          <span class="perfil__apellido">Lovagnini</span>
+        </h1>
+        <p class="perfil__rubro">Desarrollador web</p>
+        <div class="perfil__lenguajes">
+          <img class="perfil__icono-lenguajes" src="./img/logos/logo-html.svg" alt="HTML" />
+          <img class="perfil__icono-lenguajes" src="./img/logos/logo-css.svg" alt="CSS" />
+          <img class="perfil__icono-lenguajes" src="./img/logos/logo-js.svg" alt="JAVASCRIPT" />
+          <img class="perfil__icono-lenguajes" src="./img/logos/logo-git.svg" alt="GIT" />
         </div>
-        <div class="footer__right">
-          <div class="footer__social">
-            <a href="#"><i class="footer__icon fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="footer__icon fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="footer__icon fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="footer__icon fa-brands fa-github"></i></a>
-            <a href="#"><i class="footer__icon fa-brands fa-linkedin-in"></i></a>
-          </div>
+
+        <div class="perfil__boton-contenedor">
+          <a href="./pages/proyectos.html" class="perfil__boton-llamadores">Diseños</a>
+          <a href="./pages/habilidades.html" class="perfil__boton-llamadores">Habilidades</a>
+          <a href="./pages/contacto.html" class="perfil__boton-llamadores">Trabajamos juntos</a>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="perfil__foto">
+        <img class="perfil__img" src="./img/foto-perfil.webp" alt="foto de perfil" />
+      </div>
+    </section>
+  </main>
+
+  <!--footer-->
+
+  <footer id="footer">
+    <div class="footer__container">
+      <div class="footer__left">
+        <div class="footer__info">
+          <a href="#" class="footer__logo">
+            <h3 class="footer__nombre">Agustin<br />Lovagnini</h3>
+            <p class="footer__rubro">Desarrollador web</p>
+          </a>
+        </div>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="./pages/quien-soy.html" class="footer__nav-link">¿Quien soy?</a>
+            </li>
+            <li>
+              <a href="./pages/proyectos.html" class="footer__nav-link">Proyectos</a>
+            </li>
+            <li>
+              <a href="./pages/habilidades.html" class="footer__nav-link">Habilidades</a>
+            </li>
+            <li>
+              <a href="./pages/contacto.html" class="footer__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__right">
+        <div class="footer__social">
+          <a href="#"><i class="footer__icon fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="footer__icon fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="footer__icon fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="footer__icon fa-brands fa-github"></i></a>
+          <a href="#"><i class="footer__icon fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
