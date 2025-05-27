@@ -183,7 +183,7 @@
         }
 
         .perfil__img {
-            @include agus-img(200px, 170px, 250px);
+            @include agus-img(200px, 200px, 170px, 170px, 250px, 250px);
         }
     }
 }

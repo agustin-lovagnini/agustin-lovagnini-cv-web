@@ -26,7 +26,7 @@
     }
 
     &__img {
-        @include agus-img(200px, 150px, 220px, 10%, 50%, 50%, true);
+        @include agus-img(200px, 200px, 150px, 150px, 220px, 220px, 10%, 50%, 50%, true);
     }
 
     &__nombre-completo {

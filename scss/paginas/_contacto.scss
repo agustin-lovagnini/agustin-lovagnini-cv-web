@@ -219,7 +219,8 @@
             }
 
             .perfil-contacto__img {
-                @include agus-img(200px, 175px, 260px, 10%, 50%, 50%, true);
+                @include agus-img(200px, 200px, 175px, 175px, 260px, 260px, 10%, 50%, 50%, true);
+
                 @include mobile {
                     margin: 30px 0px 5px 0px;
                 }
