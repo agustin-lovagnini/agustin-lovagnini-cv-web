@@ -446,16 +446,18 @@
 }
 .perfil .perfil__icono-lenguajes {
   width: 60px;
-  height: auto;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .perfil .perfil__icono-lenguajes {
     width: 55px;
+    height: 55px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .perfil .perfil__icono-lenguajes {
     width: 80px;
+    height: 80px;
   }
 }
 .perfil .perfil__boton-contenedor {
@@ -830,17 +832,19 @@
   }
 }
 .contacto .perfil-contacto__lenguajes .perfil-contacto__icono-lenguajes {
-  width: 70px;
-  height: auto;
+  width: 60px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .contacto .perfil-contacto__lenguajes .perfil-contacto__icono-lenguajes {
-    width: 60px;
+    width: 55px;
+    height: 55px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .perfil-contacto__lenguajes .perfil-contacto__icono-lenguajes {
     width: 80px;
+    height: 80px;
   }
 }
 .contacto .perfil-contacto__nombre-completo {
@@ -1041,19 +1045,21 @@
   }
 }
 .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
-  width: 80px;
-  height: auto;
+  width: 60px;
+  height: 60px;
   margin-bottom: 10px;
   filter: drop-shadow(0 0 1px #fff);
 }
 @media screen and (max-width: 576px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
-    width: 60px;
+    width: 55px;
+    height: 55px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .habilidades__left ul.habilidades__otros-conocimientos-lista li.habilidades__otros-conocimientos-item .habilidades__conocimientos-icono {
-    width: 60px;
+    width: 80px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 576px) {
