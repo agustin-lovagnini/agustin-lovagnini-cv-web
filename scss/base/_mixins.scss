@@ -45,15 +45,17 @@
 
 
 /*icono lenguajes*/
-@mixin icono-lenguajes($width-desktop, $width-mobile, $width-tablet, $height: auto) {
+@mixin icono-lenguajes($width-desktop, $height-desktop, $width-mobile, $height-mobile, $width-tablet, $height-tablet) {
     width: $width-desktop;
-    height: $height;
+    height: $height-desktop;
 
     @include mobile {
         width: $width-mobile;
+        height: $height-mobile;
     }
 
     @include tablet {
         width: $width-tablet;
+        height: $height-tablet;
     }
 }

@@ -248,7 +248,8 @@
             }
 
             .perfil-contacto__icono-lenguajes {
-                @include icono-lenguajes(70px, 60px, 80px);
+                @include icono-lenguajes(60px, 60px, 55px, 55px, 80px, 80px);
+
             }
         }
 
