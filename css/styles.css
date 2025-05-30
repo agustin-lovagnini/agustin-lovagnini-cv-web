@@ -1306,7 +1306,7 @@
 }
 .proyectos__contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   margin-top: 25px;
@@ -1386,8 +1386,8 @@
   overflow: hidden;
 }
 .proyectos__media img {
-  width: 100%;
-  height: auto;
+  width: 400px;
+  height: 125px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
