@@ -1386,8 +1386,8 @@
   overflow: hidden;
 }
 .proyectos__media img {
-  width: 400px;
-  height: 125px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
