@@ -87,7 +87,7 @@
         &-descripcion {
             font-family: $estilo-tipografia-abel;
             font-size: 16px;
-            padding: 10px 5px;
+            padding: 0 20px 20px 20px;;
             color: $color-tipografia-white;
 
             @include mobile {

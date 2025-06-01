@@ -1358,7 +1358,7 @@
 .proyectos__item-descripcion {
   font-family: "Abel", sans-serif;
   font-size: 16px;
-  padding: 10px 5px;
+  padding: 0 20px 20px 20px;
   color: #fff;
 }
 @media screen and (max-width: 576px) {
