@@ -64,13 +64,18 @@
   text-decoration: none;
 }
 #header .header__logo {
-  font-size: 30px;
+  font-size: 36px;
   color: #fff;
   font-family: "Anton", sans-serif;
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #header .header__logo {
-    font-size: 40px;
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #header .header__logo {
+    font-size: 30px;
   }
 }
 
@@ -110,7 +115,7 @@
 
 .header__nav-item {
   font-family: "Abel", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.959);
   letter-spacing: 2px;
   display: inline-block;
@@ -130,7 +135,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .header__nav-item {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -139,7 +144,7 @@
 }
 
 .hamburguesa {
-  font-size: 30px;
+  display: none;
   color: white;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -151,13 +156,14 @@
   .hamburguesa {
     display: block;
     margin-left: auto;
+    font-size: 30px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .hamburguesa {
     display: block;
     margin-left: auto;
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 
@@ -244,7 +250,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #footer .footer__nombre {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 #footer .footer__rubro {
@@ -278,7 +284,7 @@
 #footer .footer__nav-link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.959);
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px;
 }
 @media screen and (max-width: 576px) {
@@ -288,7 +294,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #footer .footer__nav-link {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -323,7 +329,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #footer .footer__icon {
-    font-size: 40px;
+    font-size: 34px;
     margin: 0 0 0 5px;
   }
 }
@@ -612,7 +618,7 @@
 .contacto .formulario__titulo {
   margin-bottom: 10px;
   font-family: "Anton", sans-serif;
-  font-size: 60px;
+  font-size: 55px;
   letter-spacing: 3px;
   transition: color 0.3s ease;
   text-align: center;
@@ -620,12 +626,12 @@
 }
 @media screen and (max-width: 576px) {
   .contacto .formulario__titulo {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__titulo {
-    font-size: 75px;
+    font-size: 60px;
   }
 }
 .contacto .formulario__subtitulo {
@@ -643,7 +649,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__subtitulo {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 .contacto .formulario__label {
@@ -661,7 +667,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__label {
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 35px;
   }
 }
@@ -685,7 +691,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__input, .contacto .formulario__textarea {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 .contacto .formulario__input::placeholder, .contacto .formulario__textarea::placeholder {
@@ -701,7 +707,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__input::placeholder, .contacto .formulario__textarea::placeholder {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .contacto .formulario__textarea {
@@ -730,8 +736,8 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .formulario__boton-enviar {
-    font-size: 30px;
-    padding: 15px 40px;
+    font-size: 24px;
+    padding: 12px 30px;
     margin-bottom: 20px;
   }
 }
@@ -853,7 +859,7 @@
   margin-bottom: 2px;
 }
 .contacto .perfil-contacto__nombre-completo .perfil-contacto__nombre {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 5px;
@@ -861,16 +867,16 @@
 }
 @media screen and (max-width: 576px) {
   .contacto .perfil-contacto__nombre-completo .perfil-contacto__nombre {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .perfil-contacto__nombre-completo .perfil-contacto__nombre {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 .contacto .perfil-contacto__nombre-completo .perfil-contacto__apellido {
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Anton", sans-serif;
   letter-spacing: 5px;
 }
@@ -881,25 +887,25 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .perfil-contacto__nombre-completo .perfil-contacto__apellido {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 .contacto .perfil-contacto .perfil-contacto__rubro {
   letter-spacing: 5px;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
   text-shadow: 1px 1px rgb(0, 0, 0);
   font-family: "Abel", sans-serif;
 }
 @media screen and (max-width: 576px) {
   .contacto .perfil-contacto .perfil-contacto__rubro {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .contacto .perfil-contacto .perfil-contacto__rubro {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
   }
 }
@@ -1001,7 +1007,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .habilidades__left .habilidades__info-descripcion {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .habilidades__left ul.habilidades__otros-conocimientos-lista {
@@ -1274,7 +1280,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 @media screen and (max-width: 576px) {
   .proyectos {
@@ -1286,44 +1292,108 @@
     padding: 70px;
   }
 }
+.proyectos__proyectos-completados {
+  margin: 20px 0 30px 0;
+}
+.proyectos__prototipos-pruebas {
+  margin: 20px 0 30px 0;
+}
 .proyectos__titulo {
-  text-align: center;
+  display: block;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+  background-color: #181818;
+  border: 5px solid rgb(233, 183, 103);
+  border-radius: 20px;
   font-family: "Anton", sans-serif;
-  font-size: 40px;
-  letter-spacing: 3px;
+  font-size: 36px;
+  letter-spacing: 4px;
   color: #fff;
-  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
   .proyectos__titulo {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .proyectos__titulo {
-    font-size: 80px;
+    font-size: 32px;
   }
 }
-.proyectos__contenedor {
+.proyectos__subtitulo {
+  position: relative;
+  text-align: start;
+  font-family: "Abel", sans-serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+  padding-left: 20px;
+  color: #fff;
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+.proyectos__subtitulo::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transform: translateX(20px);
+  width: 50%;
+  border-bottom: 3px solid rgb(233, 183, 103);
+}
+@media screen and (max-width: 576px) {
+  .proyectos__subtitulo {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .proyectos__subtitulo::after {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .proyectos__subtitulo {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .proyectos__subtitulo::after {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.proyectos__contenedor-proyectos-completados, .proyectos__contenedor-prototipos-pruebas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   padding: 20px;
-  margin-top: 25px;
+  justify-items: center;
+  gap: 1rem;
+}
+.proyectos__contenedor-proyectos-completados {
+  grid-template-columns: repeat(3, 1fr);
 }
 @media screen and (max-width: 576px) {
-  .proyectos__contenedor {
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 25px;
+  .proyectos__contenedor-proyectos-completados {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
-  .proyectos__contenedor {
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 40px;
+  .proyectos__contenedor-proyectos-completados {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+}
+.proyectos__contenedor-prototipos-pruebas {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.proyectos__item--completado {
+  width: 80%;
+}
+.proyectos__item--prototipo {
+  width: 60%;
 }
 .proyectos__item {
   background-color: rgba(28, 28, 28, 0.8);
@@ -1340,35 +1410,35 @@
 .proyectos__item-titulo {
   font-family: "Abel", sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: 10px;
 }
 @media screen and (max-width: 576px) {
   .proyectos__item-titulo {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .proyectos__item-titulo {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 .proyectos__item-descripcion {
   font-family: "Abel", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 20px 20px 20px;
   color: #fff;
 }
 @media screen and (max-width: 576px) {
   .proyectos__item-descripcion {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .proyectos__item-descripcion {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 .proyectos__item:hover {
@@ -1461,7 +1531,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__nombre {
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 .quien-soy__apellido {
@@ -1479,7 +1549,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__apellido {
-    font-size: 65px;
+    font-size: 55px;
   }
 }
 .quien-soy__rubro {
@@ -1502,7 +1572,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__rubro {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 .quien-soy__texto-container {
@@ -1524,7 +1594,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__texto-container {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .quien-soy__texto {
@@ -1545,7 +1615,7 @@
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__llamador-texto {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .quien-soy__llamador-texto .span-llamador {
@@ -1590,7 +1660,7 @@
   .quien-soy__boton-llamadores {
     width: 100%;
     max-width: 250px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .quien-soy__foto {

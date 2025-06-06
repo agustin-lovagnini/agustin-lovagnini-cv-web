@@ -32,12 +32,16 @@
     }
 
     .header__logo {
-        font-size: 30px;
+        font-size: 36px;
         color: $color-tipografia-white;
         font-family: $estilo-tipografia-anton;
 
         @include tablet {
-            font-size: 40px;
+            font-size: 34px;
+        }
+
+        @include mobile {
+            font-size: 30px;
         }
     }
 }
@@ -78,7 +82,7 @@
 
 .header__nav-item {
     font-family: $estilo-tipografia-abel;
-    font-size: 14px;
+    font-size: 16px;
     color: $botones-header-item;
     letter-spacing: 2px;
     display: inline-block;
@@ -97,7 +101,7 @@
     }
 
     @include tablet {
-        font-size: 30px;
+        font-size: 22px;
     }
 }
 
@@ -106,7 +110,7 @@
 }
 
 .hamburguesa {
-    font-size: 30px;
+    display: none;
     color: white;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -117,12 +121,13 @@
     @include mobile {
         display: block;
         margin-left: auto;
+        font-size: 30px;
     }
 
     @include tablet {
         display: block;
         margin-left: auto;
-        font-size: 40px;
+        font-size: 34px;
     }
 }
 

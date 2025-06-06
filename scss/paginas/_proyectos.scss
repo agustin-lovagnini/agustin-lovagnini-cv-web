@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 50px 20px;
 
     @include mobile {
         padding: 20px;
@@ -17,41 +17,114 @@
         padding: 70px;
     }
 
+    &__proyectos-completados {
+        margin: 20px 0 30px 0;
+    }
+
+    &__prototipos-pruebas {
+        margin: 20px 0 30px 0;
+    }
+
     &__titulo {
-        text-align: center;
+        display: block;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        background-color: $background-color;
+        border: 5px solid $color-2;
+        border-radius: 20px;
         font-family: $estilo-tipografia-anton;
-        font-size: 40px;
-        letter-spacing: 3px;
+        font-size: 36px;
+        letter-spacing: 4px;
         color: $color-tipografia-white;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+        text-align: center;
 
         @include mobile {
-            font-size: 45px;
+            font-size: 30px;
         }
 
         @include tablet {
-            font-size: 80px;
+            font-size: 32px;
         }
     }
 
-    &__contenedor {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-        margin-top: 25px;
+    &__subtitulo {
+        position: relative;
+        text-align: start;
+        font-family: $estilo-tipografia-abel;
+        font-size: 28px;
+        letter-spacing: 4px;
+        padding-left: 20px;
+        color: $color-tipografia-white;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            transform: translateX(20px);
+            width: 50%;
+            border-bottom: 3px solid $color-2;
+        }
 
         @include mobile {
-            grid-template-columns: 1fr;
-            padding: 10px;
-            gap: 25px;
+            font-size: 24px;
+            text-align: center;
+            padding-left: 0;
+
+            &::after {
+                width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         @include tablet {
-            grid-template-columns: 1fr;
-            padding: 10px;
-            gap: 40px;
+            font-size: 26px;
+            text-align: center;
+            padding-left: 0;
+
+            &::after {
+                width: 60%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
+    }
+
+    &__contenedor-proyectos-completados,
+    &__contenedor-prototipos-pruebas {
+        display: grid;
+        padding: 20px;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    &__contenedor-proyectos-completados {
+        grid-template-columns: repeat(3, 1fr);
+
+        @include mobile {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+    }
+
+    &__contenedor-prototipos-pruebas {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    &__item--completado {
+        width: 80%;
+    }
+
+    &__item--prototipo {
+        width: 60%;
     }
 
     &__item {
@@ -70,32 +143,33 @@
         &-titulo {
             font-family: $estilo-tipografia-abel;
             color: $color-tipografia-white;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             letter-spacing: 1px;
-            padding: 10px 5px;
-
-            @include mobile {
-                font-size: 25px;
-            }
-
-            @include tablet {
-                font-size: 40px;
-            }
-        }
-
-        &-descripcion {
-            font-family: $estilo-tipografia-abel;
-            font-size: 16px;
-            padding: 0 20px 20px 20px;;
-            color: $color-tipografia-white;
+            padding: 10px;
 
             @include mobile {
                 font-size: 20px;
             }
 
             @include tablet {
-                font-size: 30px;
+                font-size: 20px;
+            }
+        }
+
+        &-descripcion {
+            font-family: $estilo-tipografia-abel;
+            font-size: 18px;
+            padding: 0 20px 20px 20px;
+            ;
+            color: $color-tipografia-white;
+
+            @include mobile {
+                font-size: 16px;
+            }
+
+            @include tablet {
+                font-size: 16px;
             }
         }
 
