@@ -51,18 +51,18 @@
         &__titulo {
             margin-bottom: 10px;
             font-family: $estilo-tipografia-anton;
-            font-size: 60px;
+            font-size: 55px;
             letter-spacing: 3px;
             transition: color 0.3s ease;
             text-align: center;
             color: $color-tipografia-white;
 
             @include mobile {
-                font-size: 40px;
+                font-size: 35px;
             }
 
             @include tablet {
-                font-size: 75px;
+                font-size: 60px;
             }
         }
 
@@ -79,7 +79,7 @@
             }
 
             @include tablet {
-                font-size: 35px;
+                font-size: 28px;
             }
         }
 
@@ -96,7 +96,7 @@
             }
 
             @include tablet {
-                font-size: 28px;
+                font-size: 22px;
                 margin-bottom: 35px;
             }
         }
@@ -120,7 +120,7 @@
             }
 
             @include tablet {
-                font-size: 25px;
+                font-size: 18px;
             }
         }
 
@@ -136,7 +136,7 @@
             }
 
             @include tablet {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
 
@@ -151,7 +151,6 @@
             padding: 10px 25px;
             border: 1px solid #b1b1b1;
             border-radius: 50px;
-
             background-color: $background-color-black-opacity;
             color: $color-tipografia-white;
             font-family: $estilo-tipografia-abel;
@@ -166,8 +165,8 @@
             }
 
             @include tablet {
-                font-size: 30px;
-                padding: 15px 40px;
+                font-size: 24px;
+                padding: 12px 30px;
                 margin-bottom: 20px;
             }
         }
@@ -259,23 +258,23 @@
             margin-bottom: 2px;
 
             .perfil-contacto__nombre {
-                font-size: 45px;
+                font-size: 40px;
                 font-weight: bold;
                 letter-spacing: 2px;
                 margin-bottom: 5px;
                 font-family: $estilo-tipografia-abel;
 
                 @include mobile {
-                    font-size: 40px;
+                    font-size: 36px;
                 }
 
                 @include tablet {
-                    font-size: 50px;
+                    font-size: 45px;
                 }
             }
 
             .perfil-contacto__apellido {
-                font-size: 50px;
+                font-size: 45px;
                 font-family: $estilo-tipografia-anton;
                 letter-spacing: 5px;
 
@@ -284,7 +283,7 @@
                 }
 
                 @include tablet {
-                    font-size: 60px;
+                    font-size: 50px;
                 }
             }
         }
@@ -292,17 +291,17 @@
         .perfil-contacto__rubro {
             letter-spacing: 5px;
             font-weight: bold;
-            font-size: 35px;
+            font-size: 28px;
             text-shadow: 1px 1px rgba(0, 0, 0, 1);
             font-family: $estilo-tipografia-abel;
 
             @include mobile {
-                font-size: 30px;
+                font-size: 25px;
                 text-align: center;
             }
 
             @include tablet {
-                font-size: 45px;
+                font-size: 35px;
                 text-align: center;
             }
         }
