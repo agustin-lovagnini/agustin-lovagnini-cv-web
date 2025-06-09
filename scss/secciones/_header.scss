@@ -53,6 +53,7 @@
         gap: 3rem;
 
         @include mobile {
+            list-style: none;
             flex-direction: column;
             background-color: #000;
             position: absolute;
@@ -62,20 +63,29 @@
             padding: 1rem;
             gap: 15px;
             align-items: center;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
         }
 
         @include tablet {
+            list-style: none;
             flex-direction: column;
             background-color: #000;
             position: absolute;
-            top: 70px;
+            top: 50px;
             left: 0;
             width: 100%;
             padding: 1rem;
             gap: 15px;
             align-items: center;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
         }
     }
 }
@@ -116,7 +126,6 @@
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
-    display: none;
 
     @include mobile {
         display: block;
@@ -133,12 +142,16 @@
 
 @include mobile {
     #menu-toggle:checked+.hamburguesa+.header__nav ul {
-        display: flex;
+        max-height: 500px; // Un valor alto suficiente
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @include tablet {
     #menu-toggle:checked+.hamburguesa+.header__nav ul {
-        display: flex;
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
     }
 }

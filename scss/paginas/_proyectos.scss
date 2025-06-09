@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 50px;
 
     @include mobile {
         padding: 20px;
@@ -35,7 +35,7 @@
         background-color: $background-color;
         border: 5px solid $color-2;
         border-radius: 20px;
-        font-family: $estilo-tipografia-anton;
+        font-family: $estilo-tipografia-abel;
         font-size: 36px;
         letter-spacing: 4px;
         color: $color-tipografia-white;

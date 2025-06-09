@@ -74,6 +74,8 @@
     &__rubro {
         display: block;
         text-align: center;
+        position: relative;
+        top: 50px;
         background-color: $background-color;
         border: 5px solid $color-2;
         border-radius: 20px;
@@ -97,7 +99,7 @@
         background-color: $background-color-black-opacity;
         border: 5px solid #fff;
         border-radius: 20px;
-        padding: 20px;
+        padding: 50px 20px 20px 20px;
         font-family: $estilo-tipografia-abel;
         color: $color-tipografia-white;
         font-size: 20px;
