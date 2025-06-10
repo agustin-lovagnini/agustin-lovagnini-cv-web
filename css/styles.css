@@ -1519,6 +1519,105 @@
   border-top-right-radius: 15px;
   mask-image: linear-gradient(#000 80%, transparent);
 }
+.proyectos__cta-final {
+  padding: 0 20px 50px 20px;
+  text-align: center;
+}
+.proyectos__cta-final h4 {
+  position: relative;
+  font-family: "Abel", sans-serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+  padding-left: 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+.proyectos__cta-final h4::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  border-bottom: 3px solid rgb(233, 183, 103);
+}
+@media screen and (max-width: 576px) {
+  .proyectos__cta-final h4 {
+    font-size: 24px;
+    padding-left: 0;
+  }
+  .proyectos__cta-final h4::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .proyectos__cta-final h4 {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .proyectos__cta-final h4::after {
+    width: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.proyectos__cta-final p {
+  padding: 20px;
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .proyectos__cta-final p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .proyectos__cta-final p {
+    font-size: 20px;
+  }
+}
+.proyectos__cta-final .proyectos__boton-llamadores {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 20px auto;
+  border: 1px solid #b1b1b1;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: border 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  background-color: rgba(28, 28, 28, 0.8);
+  font-family: "Abel", sans-serif;
+}
+@media (hover: hover) and (pointer: fine) {
+  .proyectos__cta-final .proyectos__boton-llamadores:hover {
+    border: 1px solid rgb(233, 183, 103);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 576px) {
+  .proyectos__cta-final .proyectos__boton-llamadores {
+    width: 100%;
+    max-width: 250px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .proyectos__cta-final .proyectos__boton-llamadores {
+    width: 100%;
+    max-width: 250px;
+    font-size: 20px;
+  }
+}
 
 .quien-soy {
   display: flex;
@@ -1688,14 +1787,15 @@
   margin: 3rem auto 0 auto;
 }
 .quien-soy__boton-llamadores {
-  text-align: center;
+  display: inline-block;
   padding: 10px 25px;
+  margin: 20px auto;
   border: 1px solid #b1b1b1;
   border-radius: 25px;
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
-  transition: border 0.3s ease, scale 0.3s ease;
+  transition: border 0.3s ease, transform 0.3s ease;
   text-decoration: none;
   background-color: rgba(28, 28, 28, 0.8);
   font-family: "Abel", sans-serif;
@@ -1703,7 +1803,7 @@
 @media (hover: hover) and (pointer: fine) {
   .quien-soy__boton-llamadores:hover {
     border: 1px solid rgb(233, 183, 103);
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
   }
 }

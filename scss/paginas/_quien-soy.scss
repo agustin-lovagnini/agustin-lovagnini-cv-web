@@ -151,14 +151,15 @@
     }
 
     &__boton-llamadores {
-        text-align: center;
+        display: inline-block;
         padding: 10px 25px;
+        margin: 20px auto;
         border: 1px solid #b1b1b1;
         border-radius: 25px;
         color: $color-tipografia-white;
         font-size: 15px;
         letter-spacing: 1px;
-        transition: border 0.3s ease, scale 0.3s ease;
+        transition: border 0.3s ease, transform 0.3s ease;
         text-decoration: none;
         background-color: $background-color-black-opacity;
         font-family: $estilo-tipografia-abel;
@@ -166,7 +167,7 @@
         @media (hover: hover) and (pointer: fine) {
             &:hover {
                 border: 1px solid $color-2;
-                scale: 1.05;
+                transform: scale(1.05);
                 cursor: pointer;
             }
         }
