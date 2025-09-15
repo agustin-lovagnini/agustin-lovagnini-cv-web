@@ -380,15 +380,18 @@
 .perfil .perfil__nombre-completo {
   line-height: 0.9;
   margin-bottom: 15px;
+  font-size: 80px;
 }
 @media screen and (max-width: 576px) {
   .perfil .perfil__nombre-completo {
     line-height: 1;
+    font-size: 40px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .perfil .perfil__nombre-completo {
     line-height: 1;
+    font-size: 70px;
   }
 }
 .perfil .perfil__nombre {
@@ -580,7 +583,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 80px 0 80px;
 }
 @media screen and (max-width: 576px) {
   .contacto {
@@ -942,7 +945,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 50px;
-  padding: 0 50px;
+  padding: 50px 80px 0px 80px;
   /* LADO IZQUIERDO */
   /* LADO DERECHO */
 }
@@ -1336,7 +1339,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px;
+  padding: 50px 80px 0px 80px;
 }
 @media screen and (max-width: 576px) {
   .proyectos {
@@ -1388,6 +1391,7 @@
   letter-spacing: 4px;
   padding-left: 20px;
   color: #fff;
+  margin-bottom: 20px;
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
 }
 .proyectos__subtitulo::after {
@@ -1404,6 +1408,7 @@
     font-size: 24px;
     text-align: center;
     padding-left: 0;
+    margin-bottom: 10px;
   }
   .proyectos__subtitulo::after {
     width: 90%;
@@ -1416,6 +1421,7 @@
     font-size: 26px;
     text-align: center;
     padding-left: 0;
+    margin-bottom: 15px;
   }
   .proyectos__subtitulo::after {
     width: 60%;
@@ -1426,11 +1432,10 @@
 .proyectos__contenedor-proyectos-completados, .proyectos__contenedor-prototipos-pruebas {
   display: grid;
   padding: 20px;
-  justify-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .proyectos__contenedor-proyectos-completados {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 500px));
 }
 @media screen and (max-width: 576px) {
   .proyectos__contenedor-proyectos-completados {
@@ -1443,7 +1448,7 @@
   }
 }
 .proyectos__contenedor-prototipos-pruebas {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .proyectos__item--completado {
   width: 80%;
@@ -1506,6 +1511,9 @@
     transform: none !important;
     border-color: #fff !important;
   }
+}
+.proyectos__item:last-child:nth-child(3n+1) {
+  grid-column: 2;
 }
 .proyectos__media {
   position: relative;
@@ -1570,7 +1578,6 @@
   font-family: "Abel", sans-serif;
   font-size: 22px;
   color: #fff;
-  margin: 10px 0;
   text-align: center;
 }
 @media screen and (max-width: 576px) {
@@ -1586,11 +1593,11 @@
 .proyectos__cta-final .proyectos__boton-llamadores {
   display: inline-block;
   padding: 10px 25px;
-  margin: 20px auto;
+  margin: 10px auto;
   border: 1px solid #b1b1b1;
   border-radius: 25px;
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 1px;
   transition: border 0.3s ease, transform 0.3s ease;
   text-decoration: none;
@@ -1608,7 +1615,7 @@
   .proyectos__cta-final .proyectos__boton-llamadores {
     width: 100%;
     max-width: 250px;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1624,7 +1631,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 80px 50px 80px;
 }
 @media screen and (max-width: 576px) {
   .quien-soy {
@@ -1632,7 +1639,7 @@
     text-align: center;
     flex-direction: column;
     padding: 20px;
-    gap: 30px;
+    gap: 0px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1642,6 +1649,19 @@
     flex-direction: column;
     padding: 20px;
     gap: 30px;
+  }
+}
+.quien-soy__descripcion {
+  margin: 0 50px;
+}
+@media screen and (max-width: 576px) {
+  .quien-soy__descripcion {
+    margin: 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .quien-soy__descripcion {
+    margin: 0;
   }
 }
 .quien-soy__img {
@@ -1711,7 +1731,7 @@
   display: block;
   text-align: center;
   position: relative;
-  top: 50px;
+  margin-bottom: -30px;
   background-color: #181818;
   border: 5px solid rgb(233, 183, 103);
   border-radius: 20px;
@@ -1736,7 +1756,7 @@
   background-color: rgba(28, 28, 28, 0.8);
   border: 5px solid #fff;
   border-radius: 20px;
-  padding: 50px 20px 20px 20px;
+  padding: 20px;
   font-family: "Abel", sans-serif;
   color: #fff;
   font-size: 20px;
@@ -1746,7 +1766,7 @@
 }
 @media screen and (max-width: 576px) {
   .quien-soy__texto-container {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1783,7 +1803,7 @@
   display: flex;
   flex-direction: column;
   align-items: anchor-center;
-  gap: 3rem;
+  gap: 1rem;
   margin: 3rem auto 0 auto;
 }
 .quien-soy__boton-llamadores {
@@ -1793,7 +1813,7 @@
   border: 1px solid #b1b1b1;
   border-radius: 25px;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 1px;
   transition: border 0.3s ease, transform 0.3s ease;
   text-decoration: none;
@@ -1811,7 +1831,7 @@
   .quien-soy__boton-llamadores {
     width: 100%;
     max-width: 250px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1833,12 +1853,14 @@
   .quien-soy__foto {
     background-color: transparent;
     border: none;
+    margin: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__foto {
     background-color: transparent;
     border: none;
+    margin: 0;
   }
 }
 .quien-soy__boton-contenedor {
@@ -1854,6 +1876,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    gap: 0px;
   }
 }
 

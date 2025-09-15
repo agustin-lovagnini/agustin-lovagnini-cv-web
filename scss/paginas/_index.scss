@@ -25,13 +25,16 @@
     .perfil__nombre-completo {
         line-height: 0.9;
         margin-bottom: 15px;
+        font-size: 80px;
 
         @include mobile {
             line-height: 1;
+            font-size: 40px;
         }
 
         @include tablet {
             line-height: 1;
+            font-size: 70px;
         }
     }
 
