@@ -33,5 +33,19 @@ El sitio fue pensado con un enfoque moderno y responsive, adaptable a distintos 
 - Google Fonts  
 - Meta etiquetas para SEO y redes sociales
 
+## Capturas de pantalla del proyecto
 
+### Página de inicio
+![Presentación Inicio](img\img-vistas-previas\vista-previa-inicio.png)
 
+### Quien soy?
+![Presentación Inicio](img\img-vistas-previas\vista-previa-quien-soy.png)
+
+### Proyectos
+![Presentación Inicio](img\img-vistas-previas\vista-previas-proyectos.png)
+
+### Habilidades
+![Presentación Inicio](img\img-vistas-previas\vista-previa-habilidades.png)
+
+### Contactos
+![Presentación Inicio](img\img-vistas-previas\vista-previa-contacto.png)
