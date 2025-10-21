@@ -36,16 +36,16 @@ El sitio fue pensado con un enfoque moderno y responsive, adaptable a distintos 
 ## Capturas de pantalla del proyecto
 
 ### Página de inicio
-![Presentación Inicio](img\img-vistas-previas\vista-previa-inicio.png)
+![Presentación Inicio](img/img-vistas-previas/vista-previa-inicio.png)
 
 ### Quien soy?
-![Quien soy?](img\img-vistas-previas\vista-previa-quien-soy.png)
+![Quien soy?](img/img-vistas-previas/vista-previa-quien-soy.png)
 
 ### Proyectos
-![Proyectos](img\img-vistas-previas\vista-previas-proyectos.png)
+![Proyectos](img/img-vistas-previas/vista-previas-proyectos.png)
 
 ### Habilidades
-![Habilidades](img\img-vistas-previas\vista-previa-habilidades.png)
+![Habilidades](img/img-vistas-previas/vista-previa-habilidades.png)
 
 ### Contactos
-![Contactos](img\img-vistas-previas\vista-previa-contacto.png)
+![Contactos](img/img-vistas-previas/vista-previa-contacto.png)
