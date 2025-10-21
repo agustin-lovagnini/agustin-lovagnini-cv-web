@@ -199,18 +199,16 @@
 @media screen and (max-width: 576px) {
   #footer {
     height: auto;
-    padding: 20px 0;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #footer {
     height: auto;
-    padding: 20px 0;
   }
 }
 #footer .footer__container {
   height: 100%;
-  padding: 10px 25px;
+  padding: 20px 25px;
 }
 @media screen and (max-width: 576px) {
   #footer .footer__container {
@@ -258,7 +256,7 @@
 }
 @media screen and (max-width: 576px) {
   #footer .footer__nombre {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -272,12 +270,12 @@
 }
 @media screen and (max-width: 576px) {
   #footer .footer__rubro {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
   #footer .footer__rubro {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 #footer .footer__nav {
@@ -291,7 +289,7 @@
   #footer .footer__nav {
     grid-template-columns: 1fr;
     row-gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 }
 #footer .footer__nav-link {
@@ -302,7 +300,7 @@
 }
 @media screen and (max-width: 576px) {
   #footer .footer__nav-link {
-    font-size: 17px;
+    font-size: 22px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -324,9 +322,9 @@
 @media screen and (max-width: 576px) {
   #footer .footer__social {
     justify-content: center;
-    gap: 1rem;
+    gap: 1.7rem;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 1rem;
   }
 }
 #footer .footer__icon {
@@ -336,7 +334,7 @@
 }
 @media screen and (max-width: 576px) {
   #footer .footer__icon {
-    font-size: 25px;
+    font-size: 40px;
     margin: 15px 0 0 5px;
   }
 }
@@ -1096,7 +1094,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 22px;
   margin: 25px 0;
 }
 @media screen and (max-width: 576px) {
@@ -1119,7 +1117,7 @@
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
-  padding: 28px;
+  padding: 15px;
   background-color: rgba(28, 28, 28, 0.8);
   box-shadow: 0 0 10px #fff;
   color: #fff;
@@ -1219,7 +1217,6 @@
 .habilidades__right .habilidades__proyectos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
   padding: 20px;
 }
 @media screen and (max-width: 576px) {
@@ -1443,7 +1440,7 @@
   }
 }
 .proyectos__contenedor-prototipos-pruebas {
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 .proyectos__item--completado {
   width: 80%;
@@ -1632,7 +1629,7 @@
     text-align: center;
     flex-direction: column;
     padding: 20px;
-    gap: 30px;
+    gap: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1744,11 +1741,6 @@
   text-align: center;
   text-shadow: 0px 0px 6px rgb(0, 0, 0);
 }
-@media screen and (max-width: 576px) {
-  .quien-soy__texto-container {
-    font-size: 18px;
-  }
-}
 @media (min-width: 576px) and (max-width: 1024px) {
   .quien-soy__texto-container {
     font-size: 24px;
@@ -1783,7 +1775,7 @@
   display: flex;
   flex-direction: column;
   align-items: anchor-center;
-  gap: 3rem;
+  gap: 1rem;
   margin: 3rem auto 0 auto;
 }
 .quien-soy__boton-llamadores {
@@ -1793,7 +1785,7 @@
   border: 1px solid #b1b1b1;
   border-radius: 25px;
   color: #fff;
-  font-size: 15px;
+  font-size: 22px;
   letter-spacing: 1px;
   transition: border 0.3s ease, transform 0.3s ease;
   text-decoration: none;
@@ -1811,7 +1803,7 @@
   .quien-soy__boton-llamadores {
     width: 100%;
     max-width: 250px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 576px) and (max-width: 1024px) {
@@ -1843,7 +1835,7 @@
 }
 .quien-soy__boton-contenedor {
   display: flex;
-  gap: 20px;
+  gap: 3rem;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -1854,6 +1846,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    gap: 0;
   }
 }
 

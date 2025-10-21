@@ -14,7 +14,7 @@
         text-align: center;
         flex-direction: column;
         padding: 20px;
-        gap: 30px;
+        gap: 0;
     }
 
     @include tablet {
@@ -107,10 +107,6 @@
         text-align: center;
         text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 
-        @include mobile {
-            font-size: 18px;
-        }
-
         @include tablet {
             font-size: 24px;
         }
@@ -146,7 +142,7 @@
         display: flex;
         flex-direction: column;
         align-items: anchor-center;
-        gap: 3rem;
+        gap: 1rem;
         margin: 3rem auto 0 auto;
     }
 
@@ -157,7 +153,7 @@
         border: 1px solid #b1b1b1;
         border-radius: 25px;
         color: $color-tipografia-white;
-        font-size: 15px;
+        font-size: 22px;
         letter-spacing: 1px;
         transition: border 0.3s ease, transform 0.3s ease;
         text-decoration: none;
@@ -175,7 +171,7 @@
         @include mobile {
             width: 100%;
             max-width: 250px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         @include tablet {
@@ -183,7 +179,6 @@
             max-width: 250px;
             font-size: 20px;
         }
-
 
     }
 
@@ -208,7 +203,7 @@
 
     &__boton-contenedor {
         display: flex;
-        gap: 20px;
+        gap: 3rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -218,6 +213,7 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+            gap: 0;
         }
     }
 }
